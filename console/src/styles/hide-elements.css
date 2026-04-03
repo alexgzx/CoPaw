@@ -1,0 +1,64 @@
+/* 隐藏选中的元素，保持页面简约 */
+
+/* 隐藏Logo图片 */
+.index-module__logoImg__H5Vmp,
+img[alt="CoPaw"],
+.logoImg {
+  display: none !important;
+}
+
+/* 隐藏版本号标签 */
+.index-module__versionBadge__JPPwl,
+.index-module__versionBadgeDefault__nJdj3,
+.versionBadge {
+  display: none !important;
+}
+
+/* 隐藏Logo分隔线 */
+.index-module__logoDivider__xxx,
+.logoDivider {
+  display: none !important;
+}
+
+/* 隐藏导航按钮：更新日志、文档、常见问题、GitHub */
+/* 通过按钮文本内容来定位 */
+button span:contains("更新日志")::before,
+button span:contains("文档")::before,
+button span:contains("常见问题")::before,
+button span:contains("GitHub")::before {
+  display: none !important;
+}
+
+/* 更精确的选择器 - 基于Header组件中的按钮顺序 */
+/* 更新日志按钮 */
+.header button:nth-child(1),
+/* 文档按钮 */
+.header button:nth-child(2),
+/* 常见问题按钮 */
+.header button:nth-child(3),
+/* GitHub按钮 */
+.header button:nth-child(4) {
+  display: none !important;
+}
+
+/* 如果上述选择器不生效，使用更通用的方式 */
+/* 隐藏所有文本按钮，保留图标按钮（语言切换、主题切换） */
+.copaw-btn-text span {
+  display: none !important;
+}
+
+/* 但保留语言切换器和主题切换按钮 */
+.LanguageSwitcher,
+.ThemeToggleButton,
+[class*="LanguageSwitcher"],
+[class*="ThemeToggleButton"] {
+  display: flex !important;
+}
+
+/* 确保语言切换器和主题切换按钮的子元素可见 */
+.LanguageSwitcher *,
+.ThemeToggleButton *,
+[class*="LanguageSwitcher"] *,
+[class*="ThemeToggleButton"] * {
+  display: flex !important;
+}
