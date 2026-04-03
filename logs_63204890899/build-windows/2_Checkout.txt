@@ -1,0 +1,59 @@
+﻿2026-04-03T09:23:44.7500512Z ##[group]Run actions/checkout@v4
+2026-04-03T09:23:44.7501575Z with:
+2026-04-03T09:23:44.7501985Z   repository: alexgzx/CoPaw
+2026-04-03T09:23:44.7502711Z   token: ***
+2026-04-03T09:23:44.7503111Z   ssh-strict: true
+2026-04-03T09:23:44.7503520Z   ssh-user: git
+2026-04-03T09:23:44.7503928Z   persist-credentials: true
+2026-04-03T09:23:44.7504388Z   clean: true
+2026-04-03T09:23:44.7504791Z   sparse-checkout-cone-mode: true
+2026-04-03T09:23:44.7505289Z   fetch-depth: 1
+2026-04-03T09:23:44.7505674Z   fetch-tags: false
+2026-04-03T09:23:44.7506076Z   show-progress: true
+2026-04-03T09:23:44.7506501Z   lfs: false
+2026-04-03T09:23:44.7506891Z   submodules: false
+2026-04-03T09:23:44.7507331Z   set-safe-directory: true
+2026-04-03T09:23:44.7507998Z ##[endgroup]
+2026-04-03T09:23:44.9464307Z Syncing repository: alexgzx/CoPaw
+2026-04-03T09:23:44.9467280Z ##[group]Getting Git version info
+2026-04-03T09:23:44.9468366Z Working directory is 'D:\a\CoPaw\CoPaw'
+2026-04-03T09:23:45.0674932Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-04-03T09:23:45.3844720Z git version 2.53.0.windows.2
+2026-04-03T09:23:45.3905483Z ##[endgroup]
+2026-04-03T09:23:45.3929872Z Temporarily overriding HOME='D:\a\_temp\c5f96e81-a0a8-448b-a541-0bc12454cc06' before making global git config changes
+2026-04-03T09:23:45.3933196Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-03T09:23:45.3943986Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\CoPaw\CoPaw
+2026-04-03T09:23:45.4471847Z Deleting the contents of 'D:\a\CoPaw\CoPaw'
+2026-04-03T09:23:45.4479365Z ##[group]Initializing the repository
+2026-04-03T09:23:45.4493333Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\CoPaw\CoPaw
+2026-04-03T09:23:45.5180068Z Initialized empty Git repository in D:/a/CoPaw/CoPaw/.git/
+2026-04-03T09:23:45.5233193Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/alexgzx/CoPaw
+2026-04-03T09:23:45.5841920Z ##[endgroup]
+2026-04-03T09:23:45.5844119Z ##[group]Disabling automatic garbage collection
+2026-04-03T09:23:45.5855900Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2026-04-03T09:23:45.6315219Z ##[endgroup]
+2026-04-03T09:23:45.6317071Z ##[group]Setting up auth
+2026-04-03T09:23:45.6332252Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-04-03T09:23:45.6668728Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-04-03T09:23:47.0181471Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-03T09:23:47.0520650Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-04-03T09:23:47.6608665Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-03T09:23:47.6933840Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-04-03T09:23:48.2504839Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2026-04-03T09:23:48.2837808Z ##[endgroup]
+2026-04-03T09:23:48.2838861Z ##[group]Fetching the repository
+2026-04-03T09:23:48.2853475Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +44f6ff33e13c8a7d128a93ade03cf726bbb06b92:refs/remotes/origin/main
+2026-04-03T09:23:49.3035759Z From https://github.com/alexgzx/CoPaw
+2026-04-03T09:23:49.3036794Z  * [new ref]         44f6ff33e13c8a7d128a93ade03cf726bbb06b92 -> origin/main
+2026-04-03T09:23:49.3466956Z ##[endgroup]
+2026-04-03T09:23:49.3467649Z ##[group]Determining the checkout info
+2026-04-03T09:23:49.3468864Z ##[endgroup]
+2026-04-03T09:23:49.3485259Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2026-04-03T09:23:49.3979518Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2026-04-03T09:23:49.4304124Z ##[group]Checking out the ref
+2026-04-03T09:23:49.4318169Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B main refs/remotes/origin/main
+2026-04-03T09:23:49.8330319Z Switched to a new branch 'main'
+2026-04-03T09:23:49.9255183Z branch 'main' set up to track 'origin/main'.
+2026-04-03T09:23:49.9349772Z ##[endgroup]
+2026-04-03T09:23:50.0191691Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2026-04-03T09:23:50.0603490Z 44f6ff33e13c8a7d128a93ade03cf726bbb06b92

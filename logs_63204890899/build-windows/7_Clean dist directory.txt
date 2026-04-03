@@ -1,0 +1,10 @@
+﻿2026-04-03T09:25:40.8495995Z ##[group]Run if (Test-Path dist) {
+2026-04-03T09:25:40.8496363Z [36;1mif (Test-Path dist) {[0m
+2026-04-03T09:25:40.8496609Z [36;1m  Remove-Item -Recurse -Force dist[0m
+2026-04-03T09:25:40.8496848Z [36;1m}[0m
+2026-04-03T09:25:40.8497097Z [36;1mNew-Item -ItemType Directory -Force -Path dist | Out-Null[0m
+2026-04-03T09:25:40.8583272Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-04-03T09:25:40.8583616Z env:
+2026-04-03T09:25:40.8583763Z   INPUT_RUN_POST: true
+2026-04-03T09:25:40.8583943Z   CONDA: C:\Miniconda
+2026-04-03T09:25:40.8584104Z ##[endgroup]

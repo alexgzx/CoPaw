@@ -1,0 +1,1789 @@
+﻿2026-04-03T09:23:48.2551070Z ##[group]Run conda-incubator/setup-miniconda@v3
+2026-04-03T09:23:48.2551490Z with:
+2026-04-03T09:23:48.2551750Z   auto-update-conda: true
+2026-04-03T09:23:48.2552040Z   python-version: 3.10
+2026-04-03T09:23:48.2552300Z   activate-environment: copaw-build
+2026-04-03T09:23:48.2552630Z   condarc-file: .github/condarc
+2026-04-03T09:23:48.2552970Z   conda-remove-defaults: false
+2026-04-03T09:23:48.2553300Z   auto-activate: true
+2026-04-03T09:23:48.2553610Z   auto-activate-base: legacy-placeholder
+2026-04-03T09:23:48.2553910Z   remove-profiles: true
+2026-04-03T09:23:48.2554170Z   conda-solver: libmamba
+2026-04-03T09:23:48.2554440Z   clean-patched-environment-file: true
+2026-04-03T09:23:48.2554720Z   run-post: true
+2026-04-03T09:23:48.2554950Z ##[endgroup]
+2026-04-03T09:23:48.3690890Z ##[group]Gathering Inputs...
+2026-04-03T09:23:48.3792940Z ##[endgroup]
+2026-04-03T09:23:48.3894990Z ##[group]Creating bootstrap condarc file in /Users/runner/.condarc...
+2026-04-03T09:23:48.3989390Z ##[endgroup]
+2026-04-03T09:23:48.4003040Z ##[group]Ensuring installer...
+2026-04-03T09:23:48.4049820Z Can we use bundled Miniconda?
+2026-04-03T09:23:48.4069860Z Can we download a custom installer by URL?
+2026-04-03T09:23:48.4081910Z Can we download Miniforge?
+2026-04-03T09:23:48.4116990Z Can we download Miniconda?
+2026-04-03T09:23:48.4119010Z ... will download Miniconda.
+2026-04-03T09:23:48.4122560Z Miniconda3-latest-MacOSX-arm64.sh
+2026-04-03T09:23:48.5450140Z Ensuring Installer...
+2026-04-03T09:23:48.5506900Z Checking for cached Miniconda3@latest...
+2026-04-03T09:23:48.5509880Z Did not find Miniconda3-latest-MacOSX-arm64.sh latest in cache
+2026-04-03T09:23:49.1985680Z Downloaded Miniconda3-latest-MacOSX-arm64.sh, ensuring extension .sh
+2026-04-03T09:23:49.2105770Z Caching Miniconda3@latest...
+2026-04-03T09:23:49.4896270Z Cached Miniconda3@latest: /Users/runner/hostedtoolcache/Miniconda3/latest/arm64!
+2026-04-03T09:23:49.4998150Z ##[endgroup]
+2026-04-03T09:23:49.5009490Z ##[group]Running installer...
+2026-04-03T09:23:49.5041730Z [command]/bin/bash /Users/runner/work/_temp/d4ae8761-9f4b-4573-9d4b-e5af77cc67e5.sh -f -b -p /Users/runner/miniconda3
+2026-04-03T09:23:49.5385380Z PREFIX=/Users/runner/miniconda3
+2026-04-03T09:23:49.8967590Z Unpacking bootstrapper...
+2026-04-03T09:23:49.9906830Z Unpacking payload...
+2026-04-03T09:23:57.4595430Z 
+2026-04-03T09:23:57.4597230Z Installing base environment...
+2026-04-03T09:23:57.4597670Z 
+2026-04-03T09:23:58.4027540Z Preparing transaction: ...working... done
+2026-04-03T09:24:07.1865780Z Executing transaction: ...working... 
+2026-04-03T09:24:07.1866200Z done
+2026-04-03T09:24:08.2444430Z installation finished.
+2026-04-03T09:24:08.2466730Z ##[endgroup]
+2026-04-03T09:24:08.2468280Z ##[group]Setup environment variables...
+2026-04-03T09:24:08.2476470Z Add "/Users/runner/miniconda3/condabin" to PATH
+2026-04-03T09:24:08.2477170Z Set 'CONDA="/Users/runner/miniconda3"'
+2026-04-03T09:24:08.2479010Z ##[endgroup]
+2026-04-03T09:24:08.2480800Z ##[group]Copying condarc file...
+2026-04-03T09:24:08.2487150Z Copying "/Users/runner/work/CoPaw/CoPaw/.github/condarc" to "/Users/runner/.condarc..."
+2026-04-03T09:24:08.2487940Z ##[endgroup]
+2026-04-03T09:24:08.2488300Z ##[group]Parsing environment...
+2026-04-03T09:24:08.2488780Z ##[endgroup]
+2026-04-03T09:24:08.2489290Z ##[group]Applying initial configuration...
+2026-04-03T09:24:08.2507040Z ##[warning]The 'defaults' channel might have been added implicitly. If this is intentional, add 'defaults' to the 'channels' list. Otherwise, consider setting 'conda-remove-defaults' to 'true'.
+2026-04-03T09:24:08.2512760Z Adding pkgs_dir '/Users/runner/conda_pkgs_dir'
+2026-04-03T09:24:08.2513590Z [command]/Users/runner/miniconda3/condabin/conda config --add pkgs_dirs /Users/runner/conda_pkgs_dir
+2026-04-03T09:24:08.6740680Z auto_activate: true
+2026-04-03T09:24:08.6745090Z [command]/Users/runner/miniconda3/condabin/conda config --set auto_activate true
+2026-04-03T09:24:09.0809800Z auto_update_conda: true
+2026-04-03T09:24:09.0814030Z [command]/Users/runner/miniconda3/condabin/conda config --set auto_update_conda true
+2026-04-03T09:24:09.4700100Z solver: libmamba
+2026-04-03T09:24:09.4704400Z [command]/Users/runner/miniconda3/condabin/conda config --set solver libmamba
+2026-04-03T09:24:09.8910400Z always_yes: true
+2026-04-03T09:24:09.8932960Z [command]/Users/runner/miniconda3/condabin/conda config --set always_yes true
+2026-04-03T09:24:10.2461630Z changeps1: false
+2026-04-03T09:24:10.2467300Z [command]/Users/runner/miniconda3/condabin/conda config --set changeps1 false
+2026-04-03T09:24:10.6621770Z [command]/Users/runner/miniconda3/condabin/conda config --show-sources
+2026-04-03T09:24:10.9912770Z ==> /Users/runner/miniconda3/.condarc <==
+2026-04-03T09:24:11.0013650Z channels:
+2026-04-03T09:24:11.0114810Z   - defaults
+2026-04-03T09:24:11.0215980Z 
+2026-04-03T09:24:11.0317230Z ==> /Users/runner/miniconda3/condarc.d/anaconda-auth.yml <==
+2026-04-03T09:24:11.0417470Z channel_settings:
+2026-04-03T09:24:11.0519320Z   - frozendict.frozendict({'channel': 'https://repo.anaconda.cloud/*', 'auth': 'anaconda-auth'})
+2026-04-03T09:24:11.0618890Z 
+2026-04-03T09:24:11.0720010Z ==> /Users/runner/.condarc <==
+2026-04-03T09:24:11.0820520Z auto_update_conda: True
+2026-04-03T09:24:11.0921640Z auto_activate: True
+2026-04-03T09:24:11.1022090Z changeps1: False
+2026-04-03T09:24:11.1122420Z pkgs_dirs:
+2026-04-03T09:24:11.1223040Z   - /Users/runner/conda_pkgs_dir
+2026-04-03T09:24:11.1247310Z channels:
+2026-04-03T09:24:11.1348260Z   - defaults
+2026-04-03T09:24:11.1449300Z always_yes: True
+2026-04-03T09:24:11.1550700Z solver: libmamba
+2026-04-03T09:24:11.1586520Z 
+2026-04-03T09:24:11.1593780Z [command]/Users/runner/miniconda3/condabin/conda config --show
+2026-04-03T09:24:11.4197670Z add_anaconda_token: True
+2026-04-03T09:24:11.4198220Z add_pip_as_python_dependency: True
+2026-04-03T09:24:11.4198610Z aggressive_update_packages:
+2026-04-03T09:24:11.4199070Z   - ca-certificates
+2026-04-03T09:24:11.4199400Z   - certifi
+2026-04-03T09:24:11.4199640Z   - openssl
+2026-04-03T09:24:11.4199890Z allow_conda_downgrades: False
+2026-04-03T09:24:11.4200310Z allow_cycles: True
+2026-04-03T09:24:11.4200580Z allow_non_channel_urls: False
+2026-04-03T09:24:11.4200860Z allow_softlinks: False
+2026-04-03T09:24:11.4201200Z allowlist_channels: []
+2026-04-03T09:24:11.4201460Z always_copy: False
+2026-04-03T09:24:11.4201730Z always_softlink: False
+2026-04-03T09:24:11.4202010Z always_yes: True
+2026-04-03T09:24:11.4202270Z anaconda_anon_usage: True
+2026-04-03T09:24:11.4202590Z anaconda_heartbeat: False
+2026-04-03T09:24:11.4202870Z anaconda_upload: None
+2026-04-03T09:24:11.4203210Z auto_activate: True
+2026-04-03T09:24:11.4203420Z auto_stack: 0
+2026-04-03T09:24:11.4203600Z auto_update_conda: True
+2026-04-03T09:24:11.4203970Z bld_path: 
+2026-04-03T09:24:11.4204170Z changeps1: False
+2026-04-03T09:24:11.4204470Z channel_alias: https://conda.anaconda.org
+2026-04-03T09:24:11.4204860Z channel_priority: flexible
+2026-04-03T09:24:11.4205100Z channel_settings:
+2026-04-03T09:24:11.4205380Z   - channel: https://repo.anaconda.cloud/*
+2026-04-03T09:24:11.4206200Z     auth: anaconda-auth
+2026-04-03T09:24:11.4206500Z channels:
+2026-04-03T09:24:11.4206720Z   - defaults
+2026-04-03T09:24:11.4206950Z client_ssl_cert: None
+2026-04-03T09:24:11.4207260Z client_ssl_cert_key: None
+2026-04-03T09:24:11.4207500Z clobber: False
+2026-04-03T09:24:11.4207740Z conda_build: {}
+2026-04-03T09:24:11.4208040Z console: classic
+2026-04-03T09:24:11.4208260Z create_default_packages: []
+2026-04-03T09:24:11.4208560Z croot: /Users/runner/miniconda3/conda-bld
+2026-04-03T09:24:11.4208780Z custom_channels:
+2026-04-03T09:24:11.4209120Z   pkgs/main: https://repo.anaconda.com
+2026-04-03T09:24:11.4209420Z   pkgs/r: https://repo.anaconda.com
+2026-04-03T09:24:11.4209850Z   pkgs/pro: https://repo.anaconda.com
+2026-04-03T09:24:11.4210120Z custom_multichannels:
+2026-04-03T09:24:11.4210340Z   defaults: 
+2026-04-03T09:24:11.4210580Z     - https://repo.anaconda.com/pkgs/main
+2026-04-03T09:24:11.4210980Z     - https://repo.anaconda.com/pkgs/r
+2026-04-03T09:24:11.4211250Z   local: 
+2026-04-03T09:24:11.4211450Z debug: False
+2026-04-03T09:24:11.4212090Z default_activation_env: base
+2026-04-03T09:24:11.4212340Z default_channels:
+2026-04-03T09:24:11.4212590Z   - https://repo.anaconda.com/pkgs/main
+2026-04-03T09:24:11.4212980Z   - https://repo.anaconda.com/pkgs/r
+2026-04-03T09:24:11.4213270Z default_python: 3.13
+2026-04-03T09:24:11.4213510Z default_threads: None
+2026-04-03T09:24:11.4213920Z denylist_channels: []
+2026-04-03T09:24:11.4214180Z deps_modifier: not_set
+2026-04-03T09:24:11.4214500Z dev: False
+2026-04-03T09:24:11.4214730Z disallowed_packages: []
+2026-04-03T09:24:11.4214970Z download_only: False
+2026-04-03T09:24:11.4215260Z dry_run: False
+2026-04-03T09:24:11.4215500Z enable_private_envs: False
+2026-04-03T09:24:11.4215790Z env_prompt: ({default_env}) 
+2026-04-03T09:24:11.4216070Z environment_specifier: None
+2026-04-03T09:24:11.4216380Z envs_dirs:
+2026-04-03T09:24:11.4216620Z   - /Users/runner/miniconda3/envs
+2026-04-03T09:24:11.4216870Z   - /Users/runner/.conda/envs
+2026-04-03T09:24:11.4217200Z envvars_force_uppercase: True
+2026-04-03T09:24:11.4217660Z error_upload_url: https://conda.io/conda-post/unexpected-error
+2026-04-03T09:24:11.4218050Z execute_threads: 1
+2026-04-03T09:24:11.4218370Z experimental: []
+2026-04-03T09:24:11.4218590Z export_platforms:
+2026-04-03T09:24:11.4218830Z   - osx-arm64
+2026-04-03T09:24:11.4219120Z extra_safety_checks: False
+2026-04-03T09:24:11.4219340Z fetch_threads: 5
+2026-04-03T09:24:11.4219540Z force: False
+2026-04-03T09:24:11.4219830Z force_32bit: False
+2026-04-03T09:24:11.4220050Z force_reinstall: False
+2026-04-03T09:24:11.4220290Z force_remove: False
+2026-04-03T09:24:11.4220520Z ignore_pinned: False
+2026-04-03T09:24:11.4220800Z json: False
+2026-04-03T09:24:11.4220980Z list_fields:
+2026-04-03T09:24:11.4221160Z   - name
+2026-04-03T09:24:11.4221420Z   - version
+2026-04-03T09:24:11.4221620Z   - build
+2026-04-03T09:24:11.4221790Z   - channel_name
+2026-04-03T09:24:11.4222070Z local_repodata_ttl: 1
+2026-04-03T09:24:11.4222320Z migrated_channel_aliases: []
+2026-04-03T09:24:11.4222570Z migrated_custom_channels: {}
+2026-04-03T09:24:11.4222880Z no_lock: False
+2026-04-03T09:24:11.4223080Z no_plugins: False
+2026-04-03T09:24:11.4223300Z non_admin_enabled: True
+2026-04-03T09:24:11.4223530Z notify_outdated_conda: True
+2026-04-03T09:24:11.4223870Z number_channel_notices: 5
+2026-04-03T09:24:11.4224090Z offline: False
+2026-04-03T09:24:11.4224340Z override_channels_enabled: True
+2026-04-03T09:24:11.4224670Z override_virtual_packages: {}
+2026-04-03T09:24:11.4224960Z path_conflict: clobber
+2026-04-03T09:24:11.4225230Z pinned_packages: []
+2026-04-03T09:24:11.4225500Z pkgs_dirs:
+2026-04-03T09:24:11.4225730Z   - /Users/runner/conda_pkgs_dir
+2026-04-03T09:24:11.4225960Z plugins:
+2026-04-03T09:24:11.4226170Z   anaconda_telemetry: True
+2026-04-03T09:24:11.4226490Z   auto_accept_tos: False
+2026-04-03T09:24:11.4226720Z   use_sharded_repodata: False
+2026-04-03T09:24:11.4227030Z prefix_data_interoperability: False
+2026-04-03T09:24:11.4227390Z protect_frozen_envs: True
+2026-04-03T09:24:11.4227610Z proxy_servers: {}
+2026-04-03T09:24:11.4228360Z quiet: False
+2026-04-03T09:24:11.4228690Z register_envs: True
+2026-04-03T09:24:11.4228920Z remote_backoff_factor: 1
+2026-04-03T09:24:11.4229200Z remote_connect_timeout_secs: 9.15
+2026-04-03T09:24:11.4229520Z remote_max_retries: 3
+2026-04-03T09:24:11.4229780Z remote_read_timeout_secs: 60.0
+2026-04-03T09:24:11.4230040Z repodata_fns:
+2026-04-03T09:24:11.4230230Z   - current_repodata.json
+2026-04-03T09:24:11.4230550Z   - repodata.json
+2026-04-03T09:24:11.4230780Z repodata_threads: None
+2026-04-03T09:24:11.4231020Z repodata_use_zst: True
+2026-04-03T09:24:11.4231300Z report_errors: None
+2026-04-03T09:24:11.4231510Z rollback_enabled: True
+2026-04-03T09:24:11.4231840Z root_prefix: /Users/runner/miniconda3
+2026-04-03T09:24:11.4232200Z safety_checks: warn
+2026-04-03T09:24:11.4232430Z sat_solver: pycosat
+2026-04-03T09:24:11.4232660Z separate_format_cache: False
+2026-04-03T09:24:11.4232890Z shortcuts: True
+2026-04-03T09:24:11.4233180Z shortcuts_only: []
+2026-04-03T09:24:11.4233390Z show_channel_urls: None
+2026-04-03T09:24:11.4233920Z signing_metadata_url_base: None
+2026-04-03T09:24:11.4234220Z solver: libmamba
+2026-04-03T09:24:11.4234460Z solver_ignore_timestamps: False
+2026-04-03T09:24:11.4234690Z ssl_verify: True
+2026-04-03T09:24:11.4234990Z subdir: osx-arm64
+2026-04-03T09:24:11.4235210Z subdirs:
+2026-04-03T09:24:11.4235400Z   - osx-arm64
+2026-04-03T09:24:11.4235590Z   - noarch
+2026-04-03T09:24:11.4235880Z target_prefix_override: 
+2026-04-03T09:24:11.4236090Z trace: False
+2026-04-03T09:24:11.4236310Z track_features: []
+2026-04-03T09:24:11.4236640Z unsatisfiable_hints: True
+2026-04-03T09:24:11.4236940Z unsatisfiable_hints_check_depth: 2
+2026-04-03T09:24:11.4237250Z update_modifier: update_specs
+2026-04-03T09:24:11.4237600Z use_index_cache: False
+2026-04-03T09:24:11.4237800Z use_local: False
+2026-04-03T09:24:11.4238080Z use_only_tar_bz2: None
+2026-04-03T09:24:11.4238240Z verbosity: 0
+2026-04-03T09:24:11.4238470Z verify_threads: 1
+2026-04-03T09:24:11.4923300Z ##[endgroup]
+2026-04-03T09:24:11.4923810Z ##[group]Initializing conda shell integration...
+2026-04-03T09:24:11.4931760Z [command]/Users/runner/miniconda3/condabin/conda config --show --json
+2026-04-03T09:24:11.7891620Z {
+2026-04-03T09:24:11.7992880Z   "add_anaconda_token": true,
+2026-04-03T09:24:11.8113110Z   "add_pip_as_python_dependency": true,
+2026-04-03T09:24:11.8214290Z   "aggressive_update_packages": [
+2026-04-03T09:24:11.8315350Z     "ca-certificates",
+2026-04-03T09:24:11.8416320Z     "certifi",
+2026-04-03T09:24:11.8516500Z     "openssl"
+2026-04-03T09:24:11.8616980Z   ],
+2026-04-03T09:24:11.8718180Z   "allow_conda_downgrades": false,
+2026-04-03T09:24:11.8818480Z   "allow_cycles": true,
+2026-04-03T09:24:11.8841940Z   "allow_non_channel_urls": false,
+2026-04-03T09:24:11.8851610Z   "allow_softlinks": false,
+2026-04-03T09:24:11.8858000Z   "allowlist_channels": [],
+2026-04-03T09:24:11.8863430Z   "always_copy": false,
+2026-04-03T09:24:11.8872340Z   "always_softlink": false,
+2026-04-03T09:24:11.8949890Z   "always_yes": true,
+2026-04-03T09:24:11.8958270Z   "anaconda_anon_usage": true,
+2026-04-03T09:24:11.8967390Z   "anaconda_heartbeat": false,
+2026-04-03T09:24:11.8976230Z   "anaconda_upload": null,
+2026-04-03T09:24:11.8985360Z   "auto_activate": true,
+2026-04-03T09:24:11.8990680Z   "auto_stack": 0,
+2026-04-03T09:24:11.9009910Z   "auto_update_conda": true,
+2026-04-03T09:24:11.9018550Z   "bld_path": "",
+2026-04-03T09:24:11.9026170Z   "changeps1": false,
+2026-04-03T09:24:11.9038800Z   "channel_alias": {
+2026-04-03T09:24:11.9045820Z     "auth": null,
+2026-04-03T09:24:11.9057060Z     "location": "conda.anaconda.org",
+2026-04-03T09:24:11.9057570Z     "name": "",
+2026-04-03T09:24:11.9058020Z     "package_filename": null,
+2026-04-03T09:24:11.9058390Z     "platform": null,
+2026-04-03T09:24:11.9058840Z     "scheme": "https",
+2026-04-03T09:24:11.9059290Z     "token": null
+2026-04-03T09:24:11.9059690Z   },
+2026-04-03T09:24:11.9060150Z   "channel_priority": "flexible",
+2026-04-03T09:24:11.9060650Z   "channel_settings": [
+2026-04-03T09:24:11.9061050Z     {
+2026-04-03T09:24:11.9061930Z       "auth": "anaconda-auth",
+2026-04-03T09:24:11.9062440Z       "channel": "https://repo.anaconda.cloud/*"
+2026-04-03T09:24:11.9062860Z     }
+2026-04-03T09:24:11.9063150Z   ],
+2026-04-03T09:24:11.9063470Z   "channels": [
+2026-04-03T09:24:11.9063830Z     "defaults"
+2026-04-03T09:24:11.9064190Z   ],
+2026-04-03T09:24:11.9064500Z   "client_ssl_cert": null,
+2026-04-03T09:24:11.9065070Z   "client_ssl_cert_key": null,
+2026-04-03T09:24:11.9065640Z   "clobber": false,
+2026-04-03T09:24:11.9066190Z   "conda_build": {},
+2026-04-03T09:24:11.9066730Z   "console": "json",
+2026-04-03T09:24:11.9067200Z   "create_default_packages": [],
+2026-04-03T09:24:11.9067660Z   "croot": "/Users/runner/miniconda3/conda-bld",
+2026-04-03T09:24:11.9068140Z   "custom_channels": {
+2026-04-03T09:24:11.9068560Z     "pkgs/main": {
+2026-04-03T09:24:11.9068970Z       "auth": null,
+2026-04-03T09:24:11.9069340Z       "location": "repo.anaconda.com",
+2026-04-03T09:24:11.9069730Z       "name": "pkgs/main",
+2026-04-03T09:24:11.9070220Z       "package_filename": null,
+2026-04-03T09:24:11.9070920Z       "platform": null,
+2026-04-03T09:24:11.9071330Z       "scheme": "https",
+2026-04-03T09:24:11.9071630Z       "token": null
+2026-04-03T09:24:11.9072410Z     },
+2026-04-03T09:24:11.9072830Z     "pkgs/pro": {
+2026-04-03T09:24:11.9073370Z       "auth": null,
+2026-04-03T09:24:11.9073830Z       "location": "repo.anaconda.com",
+2026-04-03T09:24:11.9074240Z       "name": "pkgs/pro",
+2026-04-03T09:24:11.9074680Z       "package_filename": null,
+2026-04-03T09:24:11.9075120Z       "platform": null,
+2026-04-03T09:24:11.9075460Z       "scheme": "https",
+2026-04-03T09:24:11.9075870Z       "token": null
+2026-04-03T09:24:11.9076200Z     },
+2026-04-03T09:24:11.9077160Z     "pkgs/r": {
+2026-04-03T09:24:11.9077490Z       "auth": null,
+2026-04-03T09:24:11.9077920Z       "location": "repo.anaconda.com",
+2026-04-03T09:24:11.9078470Z       "name": "pkgs/r",
+2026-04-03T09:24:11.9078880Z       "package_filename": null,
+2026-04-03T09:24:11.9079240Z       "platform": null,
+2026-04-03T09:24:11.9079580Z       "scheme": "https",
+2026-04-03T09:24:11.9079920Z       "token": null
+2026-04-03T09:24:11.9080270Z     }
+2026-04-03T09:24:11.9080520Z   },
+2026-04-03T09:24:11.9080790Z   "custom_multichannels": {
+2026-04-03T09:24:11.9081090Z     "defaults": [
+2026-04-03T09:24:11.9081400Z       {
+2026-04-03T09:24:11.9081750Z         "auth": null,
+2026-04-03T09:24:11.9082130Z         "location": "repo.anaconda.com",
+2026-04-03T09:24:11.9082710Z         "name": "pkgs/main",
+2026-04-03T09:24:11.9083140Z         "package_filename": null,
+2026-04-03T09:24:11.9083540Z         "platform": null,
+2026-04-03T09:24:11.9083910Z         "scheme": "https",
+2026-04-03T09:24:11.9084300Z         "token": null
+2026-04-03T09:24:11.9084580Z       },
+2026-04-03T09:24:11.9084910Z       {
+2026-04-03T09:24:11.9085220Z         "auth": null,
+2026-04-03T09:24:11.9085550Z         "location": "repo.anaconda.com",
+2026-04-03T09:24:11.9085930Z         "name": "pkgs/r",
+2026-04-03T09:24:11.9086310Z         "package_filename": null,
+2026-04-03T09:24:11.9086730Z         "platform": null,
+2026-04-03T09:24:11.9087030Z         "scheme": "https",
+2026-04-03T09:24:11.9087330Z         "token": null
+2026-04-03T09:24:11.9087610Z       }
+2026-04-03T09:24:11.9087860Z     ],
+2026-04-03T09:24:11.9088120Z     "local": []
+2026-04-03T09:24:11.9088740Z   },
+2026-04-03T09:24:11.9089180Z   "debug": false,
+2026-04-03T09:24:11.9089510Z   "default_activation_env": "base",
+2026-04-03T09:24:11.9089840Z   "default_channels": [
+2026-04-03T09:24:11.9090120Z     {
+2026-04-03T09:24:11.9090380Z       "auth": null,
+2026-04-03T09:24:11.9090700Z       "location": "repo.anaconda.com",
+2026-04-03T09:24:11.9091370Z       "name": "pkgs/main",
+2026-04-03T09:24:11.9091970Z       "package_filename": null,
+2026-04-03T09:24:11.9092320Z       "platform": null,
+2026-04-03T09:24:11.9092670Z       "scheme": "https",
+2026-04-03T09:24:11.9092970Z       "token": null
+2026-04-03T09:24:11.9093290Z     },
+2026-04-03T09:24:11.9093970Z     {
+2026-04-03T09:24:11.9094320Z       "auth": null,
+2026-04-03T09:24:11.9095090Z       "location": "repo.anaconda.com",
+2026-04-03T09:24:11.9095500Z       "name": "pkgs/r",
+2026-04-03T09:24:11.9095830Z       "package_filename": null,
+2026-04-03T09:24:11.9096220Z       "platform": null,
+2026-04-03T09:24:11.9096570Z       "scheme": "https",
+2026-04-03T09:24:11.9096940Z       "token": null
+2026-04-03T09:24:11.9097240Z     }
+2026-04-03T09:24:11.9097500Z   ],
+2026-04-03T09:24:11.9097760Z   "default_python": "3.13",
+2026-04-03T09:24:11.9098070Z   "default_threads": null,
+2026-04-03T09:24:11.9098380Z   "denylist_channels": [],
+2026-04-03T09:24:11.9098690Z   "deps_modifier": "not_set",
+2026-04-03T09:24:11.9098990Z   "dev": false,
+2026-04-03T09:24:11.9099280Z   "disallowed_packages": [],
+2026-04-03T09:24:11.9099650Z   "download_only": false,
+2026-04-03T09:24:11.9099960Z   "dry_run": false,
+2026-04-03T09:24:11.9100270Z   "enable_private_envs": false,
+2026-04-03T09:24:11.9100620Z   "env_prompt": "({default_env}) ",
+2026-04-03T09:24:11.9100980Z   "environment_specifier": null,
+2026-04-03T09:24:11.9101530Z   "envs_dirs": [
+2026-04-03T09:24:11.9101910Z     "/Users/runner/miniconda3/envs",
+2026-04-03T09:24:11.9102260Z     "/Users/runner/.conda/envs"
+2026-04-03T09:24:11.9102570Z   ],
+2026-04-03T09:24:11.9102870Z   "envvars_force_uppercase": true,
+2026-04-03T09:24:11.9103330Z   "error_upload_url": "https://conda.io/conda-post/unexpected-error",
+2026-04-03T09:24:11.9103750Z   "execute_threads": 1,
+2026-04-03T09:24:11.9104120Z   "experimental": [],
+2026-04-03T09:24:11.9104420Z   "export_platforms": [
+2026-04-03T09:24:11.9104710Z     "osx-arm64"
+2026-04-03T09:24:11.9104980Z   ],
+2026-04-03T09:24:11.9105270Z   "extra_safety_checks": false,
+2026-04-03T09:24:11.9105590Z   "fetch_threads": 5,
+2026-04-03T09:24:11.9105960Z   "force": false,
+2026-04-03T09:24:11.9106250Z   "force_32bit": false,
+2026-04-03T09:24:11.9106560Z   "force_reinstall": false,
+2026-04-03T09:24:11.9106870Z   "force_remove": false,
+2026-04-03T09:24:11.9107170Z   "ignore_pinned": false,
+2026-04-03T09:24:11.9107490Z   "json": true,
+2026-04-03T09:24:11.9107890Z   "list_fields": [
+2026-04-03T09:24:11.9108170Z     "name",
+2026-04-03T09:24:11.9108440Z     "version",
+2026-04-03T09:24:11.9108700Z     "build",
+2026-04-03T09:24:11.9108980Z     "channel_name"
+2026-04-03T09:24:11.9109250Z   ],
+2026-04-03T09:24:11.9109520Z   "local_repodata_ttl": 1,
+2026-04-03T09:24:11.9109860Z   "migrated_channel_aliases": [],
+2026-04-03T09:24:11.9110210Z   "migrated_custom_channels": {},
+2026-04-03T09:24:11.9110530Z   "no_lock": false,
+2026-04-03T09:24:11.9110810Z   "no_plugins": false,
+2026-04-03T09:24:11.9111110Z   "non_admin_enabled": true,
+2026-04-03T09:24:11.9111460Z   "notify_outdated_conda": true,
+2026-04-03T09:24:11.9111800Z   "number_channel_notices": 5,
+2026-04-03T09:24:11.9112110Z   "offline": false,
+2026-04-03T09:24:11.9112430Z   "override_channels_enabled": true,
+2026-04-03T09:24:11.9112800Z   "override_virtual_packages": {},
+2026-04-03T09:24:11.9113130Z   "path_conflict": "clobber",
+2026-04-03T09:24:11.9113480Z   "pinned_packages": [],
+2026-04-03T09:24:11.9113870Z   "pkgs_dirs": [
+2026-04-03T09:24:11.9114290Z     "/Users/runner/conda_pkgs_dir"
+2026-04-03T09:24:11.9114600Z   ],
+2026-04-03T09:24:11.9114860Z   "plugins": {
+2026-04-03T09:24:11.9115170Z     "anaconda_telemetry": true,
+2026-04-03T09:24:11.9115510Z     "auto_accept_tos": false,
+2026-04-03T09:24:11.9115880Z     "use_sharded_repodata": false
+2026-04-03T09:24:11.9116180Z   },
+2026-04-03T09:24:11.9116490Z   "prefix_data_interoperability": false,
+2026-04-03T09:24:11.9116860Z   "protect_frozen_envs": true,
+2026-04-03T09:24:11.9117170Z   "proxy_servers": {},
+2026-04-03T09:24:11.9117450Z   "quiet": false,
+2026-04-03T09:24:11.9117730Z   "register_envs": true,
+2026-04-03T09:24:11.9118090Z   "remote_backoff_factor": 1,
+2026-04-03T09:24:11.9118520Z   "remote_connect_timeout_secs": 9.15,
+2026-04-03T09:24:11.9118860Z   "remote_max_retries": 3,
+2026-04-03T09:24:11.9119190Z   "remote_read_timeout_secs": 60.0,
+2026-04-03T09:24:11.9119520Z   "repodata_fns": [
+2026-04-03T09:24:11.9120320Z     "current_repodata.json",
+2026-04-03T09:24:11.9120650Z     "repodata.json"
+2026-04-03T09:24:11.9120920Z   ],
+2026-04-03T09:24:11.9121190Z   "repodata_threads": null,
+2026-04-03T09:24:11.9121500Z   "repodata_use_zst": true,
+2026-04-03T09:24:11.9121870Z   "report_errors": null,
+2026-04-03T09:24:11.9122170Z   "rollback_enabled": true,
+2026-04-03T09:24:11.9122530Z   "root_prefix": "/Users/runner/miniconda3",
+2026-04-03T09:24:11.9122880Z   "safety_checks": "warn",
+2026-04-03T09:24:11.9123180Z   "sat_solver": "pycosat",
+2026-04-03T09:24:11.9123520Z   "separate_format_cache": false,
+2026-04-03T09:24:11.9123920Z   "shortcuts": true,
+2026-04-03T09:24:11.9124290Z   "shortcuts_only": [],
+2026-04-03T09:24:11.9124590Z   "show_channel_urls": null,
+2026-04-03T09:24:11.9124930Z   "signing_metadata_url_base": null,
+2026-04-03T09:24:11.9125260Z   "solver": "libmamba",
+2026-04-03T09:24:11.9125590Z   "solver_ignore_timestamps": false,
+2026-04-03T09:24:11.9126050Z   "ssl_verify": true,
+2026-04-03T09:24:11.9126390Z   "subdir": "osx-arm64",
+2026-04-03T09:24:11.9126930Z   "subdirs": [
+2026-04-03T09:24:11.9127200Z     "osx-arm64",
+2026-04-03T09:24:11.9127460Z     "noarch"
+2026-04-03T09:24:11.9127720Z   ],
+2026-04-03T09:24:11.9128070Z   "target_prefix_override": "",
+2026-04-03T09:24:11.9128380Z   "trace": false,
+2026-04-03T09:24:11.9128660Z   "track_features": [],
+2026-04-03T09:24:11.9128980Z   "unsatisfiable_hints": true,
+2026-04-03T09:24:11.9129340Z   "unsatisfiable_hints_check_depth": 2,
+2026-04-03T09:24:11.9129710Z   "update_modifier": "update_specs",
+2026-04-03T09:24:11.9130040Z   "use_index_cache": false,
+2026-04-03T09:24:11.9130340Z   "use_local": false,
+2026-04-03T09:24:11.9130630Z   "use_only_tar_bz2": null,
+2026-04-03T09:24:11.9130930Z   "verbosity": 0,
+2026-04-03T09:24:11.9131200Z   "verify_threads": 1
+2026-04-03T09:24:11.9131490Z }
+2026-04-03T09:24:11.9131890Z Removing "/Users/runner/.bashrc"
+2026-04-03T09:24:11.9132310Z Removing "/Users/runner/.bash_profile"
+2026-04-03T09:24:11.9132790Z [command]/Users/runner/miniconda3/condabin/conda init --all
+2026-04-03T09:24:13.0139670Z no change     /Users/runner/miniconda3/condabin/conda
+2026-04-03T09:24:13.0152460Z no change     /Users/runner/miniconda3/bin/conda
+2026-04-03T09:24:13.0152880Z no change     /Users/runner/miniconda3/bin/conda-env
+2026-04-03T09:24:13.0153260Z no change     /Users/runner/miniconda3/bin/activate
+2026-04-03T09:24:13.0153640Z no change     /Users/runner/miniconda3/bin/deactivate
+2026-04-03T09:24:13.0154070Z no change     /Users/runner/miniconda3/etc/profile.d/conda.sh
+2026-04-03T09:24:13.0154520Z no change     /Users/runner/miniconda3/etc/fish/conf.d/conda.fish
+2026-04-03T09:24:13.0154970Z no change     /Users/runner/miniconda3/shell/condabin/Conda.psm1
+2026-04-03T09:24:13.0155440Z modified      /Users/runner/miniconda3/shell/condabin/conda-hook.ps1
+2026-04-03T09:24:13.0155980Z no change     /Users/runner/miniconda3/lib/python3.13/site-packages/xontrib/conda.xsh
+2026-04-03T09:24:13.0156500Z no change     /Users/runner/miniconda3/etc/profile.d/conda.csh
+2026-04-03T09:24:13.0156900Z modified      /Users/runner/.bash_profile
+2026-04-03T09:24:13.0157210Z modified      /Users/runner/.zshrc
+2026-04-03T09:24:13.0157550Z modified      /Users/runner/.config/fish/config.fish
+2026-04-03T09:24:13.0157890Z modified      /Users/runner/.xonshrc
+2026-04-03T09:24:13.0158180Z modified      /Users/runner/.tcshrc
+2026-04-03T09:24:13.0158540Z modified      /Users/runner/.config/powershell/profile.ps1
+2026-04-03T09:24:13.0158770Z 
+2026-04-03T09:24:13.0159070Z ==> For changes to take effect, close and re-open your current shell. <==
+2026-04-03T09:24:13.0159340Z 
+2026-04-03T09:24:13.0700180Z Renaming "/Users/runner/.bash_profile" to "/Users/runner/.profile"
+2026-04-03T09:24:13.0700490Z 
+2026-04-03T09:24:13.0705510Z Append to "/Users/runner/.profile":
+2026-04-03T09:24:13.0705730Z  
+2026-04-03T09:24:13.0706340Z # ----------------------------------------------------------------------------
+2026-04-03T09:24:13.0706740Z # Conda Setup Action: Basic configuration
+2026-04-03T09:24:13.0706940Z set -eo pipefail
+2026-04-03T09:24:13.0707500Z # Conda Setup Action: Custom activation
+2026-04-03T09:24:13.0707720Z conda activate "copaw-build"
+2026-04-03T09:24:13.0708070Z # ---------------------------------------------------------------------------- 
+2026-04-03T09:24:13.0708270Z 
+2026-04-03T09:24:13.0708390Z Append to "/Users/runner/.zshrc":
+2026-04-03T09:24:13.0708550Z  
+2026-04-03T09:24:13.0708840Z # ----------------------------------------------------------------------------
+2026-04-03T09:24:13.0709160Z # Conda Setup Action: Basic configuration
+2026-04-03T09:24:13.0709340Z set -eo pipefail
+2026-04-03T09:24:13.0709540Z # Conda Setup Action: Custom activation
+2026-04-03T09:24:13.0709760Z conda activate "copaw-build"
+2026-04-03T09:24:13.0710090Z # ---------------------------------------------------------------------------- 
+2026-04-03T09:24:13.0710300Z 
+2026-04-03T09:24:13.0710460Z Append to "/Users/runner/.config/fish/config.fish":
+2026-04-03T09:24:13.0710670Z  
+2026-04-03T09:24:13.0710960Z # ----------------------------------------------------------------------------
+2026-04-03T09:24:13.0711530Z # Conda Setup Action: Basic configuration
+2026-04-03T09:24:13.0711720Z set -eo pipefail
+2026-04-03T09:24:13.0711950Z # Conda Setup Action: Custom activation
+2026-04-03T09:24:13.0712160Z conda activate "copaw-build"
+2026-04-03T09:24:13.0712500Z # ---------------------------------------------------------------------------- 
+2026-04-03T09:24:13.0712710Z 
+2026-04-03T09:24:13.0712830Z Append to "/Users/runner/.tcshrc":
+2026-04-03T09:24:13.0712990Z  
+2026-04-03T09:24:13.0713270Z # ----------------------------------------------------------------------------
+2026-04-03T09:24:13.0713590Z # Conda Setup Action: Basic configuration
+2026-04-03T09:24:13.0713770Z set -eo pipefail
+2026-04-03T09:24:13.0713980Z # Conda Setup Action: Custom activation
+2026-04-03T09:24:13.0714180Z conda activate "copaw-build"
+2026-04-03T09:24:13.0714520Z # ---------------------------------------------------------------------------- 
+2026-04-03T09:24:13.0714720Z 
+2026-04-03T09:24:13.0722420Z Append to "/Users/runner/.xonshrc":
+2026-04-03T09:24:13.0722630Z  
+2026-04-03T09:24:13.0722940Z # ----------------------------------------------------------------------------
+2026-04-03T09:24:13.0723260Z # Conda Setup Action: Basic configuration
+2026-04-03T09:24:13.0723480Z $RAISE_SUBPROC_ERROR = True
+2026-04-03T09:24:13.0723660Z $XONSH_PIPEFAIL = True
+2026-04-03T09:24:13.0723870Z # Conda Setup Action: Custom activation
+2026-04-03T09:24:13.0724090Z conda activate "copaw-build"
+2026-04-03T09:24:13.0724420Z # ---------------------------------------------------------------------------- 
+2026-04-03T09:24:13.0724610Z 
+2026-04-03T09:24:13.0724810Z Append to "/Users/runner/.config/powershell/profile.ps1":
+2026-04-03T09:24:13.0725030Z  
+2026-04-03T09:24:13.0725300Z # ----------------------------------------------------------------------------
+2026-04-03T09:24:13.0725620Z # Conda Setup Action: Custom activation
+2026-04-03T09:24:13.0725830Z conda activate "copaw-build"
+2026-04-03T09:24:13.0726160Z # ---------------------------------------------------------------------------- 
+2026-04-03T09:24:13.0726360Z 
+2026-04-03T09:24:13.0726560Z Append to "/Users/runner/miniconda3/etc/profile.d/conda.sh":
+2026-04-03T09:24:13.0726780Z  
+2026-04-03T09:24:13.0727060Z # ----------------------------------------------------------------------------
+2026-04-03T09:24:13.0727380Z # Conda Setup Action: Basic configuration
+2026-04-03T09:24:13.0727560Z set -eo pipefail
+2026-04-03T09:24:13.0727760Z # Conda Setup Action: Custom activation
+2026-04-03T09:24:13.0727970Z conda activate "copaw-build"
+2026-04-03T09:24:13.0728300Z # ---------------------------------------------------------------------------- 
+2026-04-03T09:24:13.0728490Z 
+2026-04-03T09:24:13.0728700Z Append to "/Users/runner/miniconda3/etc/fish/conf.d/conda.fish":
+2026-04-03T09:24:13.0728940Z  
+2026-04-03T09:24:13.0729220Z # ----------------------------------------------------------------------------
+2026-04-03T09:24:13.0729540Z # Conda Setup Action: Basic configuration
+2026-04-03T09:24:13.0729960Z set -eo pipefail
+2026-04-03T09:24:13.0730160Z # Conda Setup Action: Custom activation
+2026-04-03T09:24:13.0730360Z conda activate "copaw-build"
+2026-04-03T09:24:13.0730700Z # ---------------------------------------------------------------------------- 
+2026-04-03T09:24:13.0730890Z 
+2026-04-03T09:24:13.0731230Z ##[endgroup]
+2026-04-03T09:24:13.0731500Z ##[group]Adding tools to 'base' env...
+2026-04-03T09:24:13.0731700Z Do we need to update conda?
+2026-04-03T09:24:13.0731900Z Do we need to update mamba?
+2026-04-03T09:24:13.0732080Z Do we need to update python?
+2026-04-03T09:24:13.0732290Z Do we need to update conda-build?
+2026-04-03T09:24:13.0732530Z No tools were installed in 'base' env.
+2026-04-03T09:24:13.0732810Z No post-install actions were taken on 'base' env.
+2026-04-03T09:24:13.0733100Z ##[endgroup]
+2026-04-03T09:24:13.0733320Z ##[group]Ensuring environment...
+2026-04-03T09:24:13.0733550Z Can we conda create (from explicit)?
+2026-04-03T09:24:13.0733750Z Can we conda create (simple)?
+2026-04-03T09:24:13.0734110Z ... will conda create (simple).
+2026-04-03T09:24:13.0734280Z Adding spec: python=3.10
+2026-04-03T09:24:13.0734590Z ##[group]Updating 'copaw-build' env from conda create (simple)...
+2026-04-03T09:24:13.0735070Z [command]/Users/runner/miniconda3/condabin/conda create --name copaw-build python=3.10
+2026-04-03T09:24:13.7216570Z CI detected...
+2026-04-03T09:24:13.7222440Z By accessing https://repo.anaconda.com/pkgs/main via CI for this repository you 
+2026-04-03T09:24:13.7223100Z acknowledge and agree to the Terms of Service:
+2026-04-03T09:24:13.7223450Z ANACONDA TERMS OF SERVICE
+2026-04-03T09:24:13.7223740Z Effective Date: July 15, 2025
+2026-04-03T09:24:13.7223920Z 
+2026-04-03T09:24:13.7224200Z See https://anaconda.com/legal/terms/terms-of-service
+2026-04-03T09:24:13.7248570Z By accessing https://repo.anaconda.com/pkgs/r via CI for this repository you 
+2026-04-03T09:24:13.7249150Z acknowledge and agree to the Terms of Service:
+2026-04-03T09:24:13.7249460Z ANACONDA TERMS OF SERVICE
+2026-04-03T09:24:13.7249750Z Effective Date: July 15, 2025
+2026-04-03T09:24:13.7249910Z 
+2026-04-03T09:24:13.7250160Z See https://anaconda.com/legal/terms/terms-of-service
+2026-04-03T09:24:13.7263130Z 2 channel Terms of Service accepted
+2026-04-03T09:24:13.9551620Z Retrieving notices: - done
+2026-04-03T09:24:13.9835080Z Channels:
+2026-04-03T09:24:13.9835280Z  - defaults
+2026-04-03T09:24:13.9835440Z Platform: osx-arm64
+2026-04-03T09:24:14.8043260Z Collecting package metadata (repodata.json): | / - done
+2026-04-03T09:24:14.9900690Z Solving environment: | done
+2026-04-03T09:24:15.0002620Z 
+2026-04-03T09:24:15.0006280Z ## Package Plan ##
+2026-04-03T09:24:15.0007040Z 
+2026-04-03T09:24:15.0007460Z   environment location: /Users/runner/miniconda3/envs/copaw-build
+2026-04-03T09:24:15.0009180Z 
+2026-04-03T09:24:15.0009350Z   added / updated specs:
+2026-04-03T09:24:15.0009610Z     - python=3.10
+2026-04-03T09:24:15.0015940Z 
+2026-04-03T09:24:15.0016040Z 
+2026-04-03T09:24:15.0016320Z The following packages will be downloaded:
+2026-04-03T09:24:15.0016620Z 
+2026-04-03T09:24:15.0016830Z     package                    |            build
+2026-04-03T09:24:15.0017200Z     ---------------------------|-----------------
+2026-04-03T09:24:15.0017750Z     bzip2-1.0.8                |       h80987f9_6         129 KB
+2026-04-03T09:24:15.0020190Z     ca-certificates-2026.3.19  |       hca03da5_0         126 KB
+2026-04-03T09:24:15.0020790Z     libcxx-21.1.8              |       hb4ce287_0         308 KB
+2026-04-03T09:24:15.0031110Z     libexpat-2.7.5             |       h50f4ffc_0         108 KB
+2026-04-03T09:24:15.0036910Z     libffi-3.4.4               |       hca03da5_1         120 KB
+2026-04-03T09:24:15.0037340Z     libzlib-1.3.1              |       h5f15de7_0          47 KB
+2026-04-03T09:24:15.0037740Z     ncurses-6.5                |       hee39554_0         886 KB
+2026-04-03T09:24:15.0038140Z     openssl-3.5.5              |       ha0b305a_0         4.7 MB
+2026-04-03T09:24:15.0038680Z     packaging-26.0             |  py310hca03da5_0         166 KB
+2026-04-03T09:24:15.0041380Z     pip-26.0.1                 |     pyhc872135_1         1.1 MB
+2026-04-03T09:24:15.0042590Z     python-3.10.20             |       h4f1bc5c_0        12.3 MB
+2026-04-03T09:24:15.0043140Z     readline-8.3               |       h0b18652_0         464 KB
+2026-04-03T09:24:15.0043560Z     setuptools-82.0.1          |  py310hca03da5_0         1.2 MB
+2026-04-03T09:24:15.0043910Z     sqlite-3.51.2              |       h67002bf_0         1.1 MB
+2026-04-03T09:24:15.0044210Z     tk-8.6.15                  |       hcd8a7d5_0         3.3 MB
+2026-04-03T09:24:15.0044510Z     tzdata-2026a               |       he532380_0         117 KB
+2026-04-03T09:24:15.0044820Z     wheel-0.46.3               |  py310hca03da5_0          54 KB
+2026-04-03T09:24:15.0045240Z     xz-5.8.2                   |       h8bbcb1d_0         263 KB
+2026-04-03T09:24:15.0045700Z     zlib-1.3.1                 |       h5f15de7_0          77 KB
+2026-04-03T09:24:15.0046010Z     ------------------------------------------------------------
+2026-04-03T09:24:15.0047150Z                                            Total:        26.6 MB
+2026-04-03T09:24:15.0047310Z 
+2026-04-03T09:24:15.0047460Z The following NEW packages will be INSTALLED:
+2026-04-03T09:24:15.0047610Z 
+2026-04-03T09:24:15.0047810Z   bzip2              pkgs/main/osx-arm64::bzip2-1.0.8-h80987f9_6 
+2026-04-03T09:24:15.0048210Z   ca-certificates    pkgs/main/osx-arm64::ca-certificates-2026.3.19-hca03da5_0 
+2026-04-03T09:24:15.0048610Z   libcxx             pkgs/main/osx-arm64::libcxx-21.1.8-hb4ce287_0 
+2026-04-03T09:24:15.0048960Z   libexpat           pkgs/main/osx-arm64::libexpat-2.7.5-h50f4ffc_0 
+2026-04-03T09:24:15.0049310Z   libffi             pkgs/main/osx-arm64::libffi-3.4.4-hca03da5_1 
+2026-04-03T09:24:15.0049710Z   libzlib            pkgs/main/osx-arm64::libzlib-1.3.1-h5f15de7_0 
+2026-04-03T09:24:15.0050050Z   ncurses            pkgs/main/osx-arm64::ncurses-6.5-hee39554_0 
+2026-04-03T09:24:15.0050390Z   openssl            pkgs/main/osx-arm64::openssl-3.5.5-ha0b305a_0 
+2026-04-03T09:24:15.0050770Z   packaging          pkgs/main/osx-arm64::packaging-26.0-py310hca03da5_0 
+2026-04-03T09:24:15.0051120Z   pip                pkgs/main/noarch::pip-26.0.1-pyhc872135_1 
+2026-04-03T09:24:15.0051460Z   python             pkgs/main/osx-arm64::python-3.10.20-h4f1bc5c_0 
+2026-04-03T09:24:15.0051800Z   readline           pkgs/main/osx-arm64::readline-8.3-h0b18652_0 
+2026-04-03T09:24:15.0052180Z   setuptools         pkgs/main/osx-arm64::setuptools-82.0.1-py310hca03da5_0 
+2026-04-03T09:24:15.0052610Z   sqlite             pkgs/main/osx-arm64::sqlite-3.51.2-h67002bf_0 
+2026-04-03T09:24:15.0052930Z   tk                 pkgs/main/osx-arm64::tk-8.6.15-hcd8a7d5_0 
+2026-04-03T09:24:15.0053240Z   tzdata             pkgs/main/noarch::tzdata-2026a-he532380_0 
+2026-04-03T09:24:15.0053580Z   wheel              pkgs/main/osx-arm64::wheel-0.46.3-py310hca03da5_0 
+2026-04-03T09:24:15.0053910Z   xz                 pkgs/main/osx-arm64::xz-5.8.2-h8bbcb1d_0 
+2026-04-03T09:24:15.0054220Z   zlib               pkgs/main/osx-arm64::zlib-1.3.1-h5f15de7_0 
+2026-04-03T09:24:15.0054390Z 
+2026-04-03T09:24:15.0054400Z 
+2026-04-03T09:24:15.0054400Z 
+2026-04-03T09:24:15.0054570Z Downloading and Extracting Packages: ...working...
+2026-04-03T09:24:15.0054890Z python-3.10.20       | 12.3 MB   |            |   0% 
+2026-04-03T09:24:15.0055050Z 
+2026-04-03T09:24:15.0055370Z openssl-3.5.5        | 4.7 MB    |            |   0% [A
+2026-04-03T09:24:15.0055530Z 
+2026-04-03T09:24:15.0055530Z 
+2026-04-03T09:24:15.0055730Z tk-8.6.15            | 3.3 MB    |            |   0% [A[A
+2026-04-03T09:24:15.0055890Z 
+2026-04-03T09:24:15.0055900Z 
+2026-04-03T09:24:15.0055900Z 
+2026-04-03T09:24:15.0056130Z setuptools-82.0.1    | 1.2 MB    |            |   0% [A[A[A
+2026-04-03T09:24:15.0056310Z 
+2026-04-03T09:24:15.0056310Z 
+2026-04-03T09:24:15.0056320Z 
+2026-04-03T09:24:15.0056320Z 
+2026-04-03T09:24:15.0056550Z sqlite-3.51.2        | 1.1 MB    |            |   0% [A[A[A[A
+2026-04-03T09:24:15.0056900Z 
+2026-04-03T09:24:15.0056910Z 
+2026-04-03T09:24:15.0056910Z 
+2026-04-03T09:24:15.0056920Z 
+2026-04-03T09:24:15.0056920Z 
+2026-04-03T09:24:15.0057160Z pip-26.0.1           | 1.1 MB    |            |   0% [A[A[A[A[A
+2026-04-03T09:24:15.0057330Z 
+2026-04-03T09:24:15.0057340Z 
+2026-04-03T09:24:15.0057340Z 
+2026-04-03T09:24:15.0057350Z 
+2026-04-03T09:24:15.0057350Z 
+2026-04-03T09:24:15.0057350Z 
+2026-04-03T09:24:15.0057620Z ncurses-6.5          | 886 KB    |            |   0% [A[A[A[A[A[A
+2026-04-03T09:24:15.0058160Z 
+2026-04-03T09:24:15.0058310Z 
+2026-04-03T09:24:15.0058320Z 
+2026-04-03T09:24:15.0058320Z 
+2026-04-03T09:24:15.0058320Z 
+2026-04-03T09:24:15.0058330Z 
+2026-04-03T09:24:15.0058330Z 
+2026-04-03T09:24:15.0058710Z readline-8.3         | 464 KB    |            |   0% [A[A[A[A[A[A[A
+2026-04-03T09:24:15.0059120Z 
+2026-04-03T09:24:15.0059130Z 
+2026-04-03T09:24:15.0059130Z 
+2026-04-03T09:24:15.0059140Z 
+2026-04-03T09:24:15.0059140Z 
+2026-04-03T09:24:15.0059150Z 
+2026-04-03T09:24:15.0059160Z 
+2026-04-03T09:24:15.0059370Z 
+2026-04-03T09:24:15.0059650Z libcxx-21.1.8        | 308 KB    |            |   0% [A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.0059850Z 
+2026-04-03T09:24:15.0059850Z 
+2026-04-03T09:24:15.0059860Z 
+2026-04-03T09:24:15.0059860Z 
+2026-04-03T09:24:15.0059870Z 
+2026-04-03T09:24:15.0059870Z 
+2026-04-03T09:24:15.0059880Z 
+2026-04-03T09:24:15.0059880Z 
+2026-04-03T09:24:15.0059890Z 
+2026-04-03T09:24:15.0060160Z xz-5.8.2             | 263 KB    |            |   0% [A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.0060350Z 
+2026-04-03T09:24:15.0060350Z 
+2026-04-03T09:24:15.0060360Z 
+2026-04-03T09:24:15.0060360Z 
+2026-04-03T09:24:15.0060370Z 
+2026-04-03T09:24:15.0060370Z 
+2026-04-03T09:24:15.0060380Z 
+2026-04-03T09:24:15.0060380Z 
+2026-04-03T09:24:15.0060380Z 
+2026-04-03T09:24:15.0060390Z 
+2026-04-03T09:24:15.0060680Z packaging-26.0       | 166 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.0060890Z 
+2026-04-03T09:24:15.0060890Z 
+2026-04-03T09:24:15.0060900Z 
+2026-04-03T09:24:15.0060900Z 
+2026-04-03T09:24:15.0060910Z 
+2026-04-03T09:24:15.0060910Z 
+2026-04-03T09:24:15.0060920Z 
+2026-04-03T09:24:15.0060920Z 
+2026-04-03T09:24:15.0060930Z 
+2026-04-03T09:24:15.0060930Z 
+2026-04-03T09:24:15.0060930Z 
+2026-04-03T09:24:15.0061230Z bzip2-1.0.8          | 129 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.0061440Z 
+2026-04-03T09:24:15.0061440Z 
+2026-04-03T09:24:15.0061450Z 
+2026-04-03T09:24:15.0061450Z 
+2026-04-03T09:24:15.0061460Z 
+2026-04-03T09:24:15.0061460Z 
+2026-04-03T09:24:15.0061460Z 
+2026-04-03T09:24:15.0061470Z 
+2026-04-03T09:24:15.0061470Z 
+2026-04-03T09:24:15.0061480Z 
+2026-04-03T09:24:15.0061480Z 
+2026-04-03T09:24:15.0061480Z 
+2026-04-03T09:24:15.0099880Z ca-certificates-2026 | 126 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.0100230Z 
+2026-04-03T09:24:15.0100230Z 
+2026-04-03T09:24:15.0100240Z 
+2026-04-03T09:24:15.0100240Z 
+2026-04-03T09:24:15.0100240Z 
+2026-04-03T09:24:15.0100290Z 
+2026-04-03T09:24:15.0100320Z 
+2026-04-03T09:24:15.0100330Z 
+2026-04-03T09:24:15.0100330Z 
+2026-04-03T09:24:15.0100340Z 
+2026-04-03T09:24:15.0100340Z 
+2026-04-03T09:24:15.0100340Z 
+2026-04-03T09:24:15.0100350Z 
+2026-04-03T09:24:15.0100810Z libffi-3.4.4         | 120 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.0101100Z 
+2026-04-03T09:24:15.0101100Z 
+2026-04-03T09:24:15.0101110Z 
+2026-04-03T09:24:15.0101110Z 
+2026-04-03T09:24:15.0101120Z 
+2026-04-03T09:24:15.0101120Z 
+2026-04-03T09:24:15.0101120Z 
+2026-04-03T09:24:15.0101130Z 
+2026-04-03T09:24:15.0101130Z 
+2026-04-03T09:24:15.0101140Z 
+2026-04-03T09:24:15.0101140Z 
+2026-04-03T09:24:15.0101140Z 
+2026-04-03T09:24:15.0101150Z 
+2026-04-03T09:24:15.0101150Z 
+2026-04-03T09:24:15.0101480Z tzdata-2026a         | 117 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.0101700Z 
+2026-04-03T09:24:15.0101700Z 
+2026-04-03T09:24:15.0101710Z 
+2026-04-03T09:24:15.0101710Z 
+2026-04-03T09:24:15.0101720Z 
+2026-04-03T09:24:15.0102130Z 
+2026-04-03T09:24:15.0102140Z 
+2026-04-03T09:24:15.0102150Z 
+2026-04-03T09:24:15.0102150Z 
+2026-04-03T09:24:15.0102160Z 
+2026-04-03T09:24:15.0102160Z 
+2026-04-03T09:24:15.0102170Z 
+2026-04-03T09:24:15.0102170Z 
+2026-04-03T09:24:15.0102170Z 
+2026-04-03T09:24:15.0102180Z 
+2026-04-03T09:24:15.0102510Z libexpat-2.7.5       | 108 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.0102750Z 
+2026-04-03T09:24:15.0102750Z 
+2026-04-03T09:24:15.0102750Z 
+2026-04-03T09:24:15.0102760Z 
+2026-04-03T09:24:15.0102760Z 
+2026-04-03T09:24:15.0102770Z 
+2026-04-03T09:24:15.0102770Z 
+2026-04-03T09:24:15.0102770Z 
+2026-04-03T09:24:15.0102780Z 
+2026-04-03T09:24:15.0102780Z 
+2026-04-03T09:24:15.0102790Z 
+2026-04-03T09:24:15.0102790Z 
+2026-04-03T09:24:15.0102790Z 
+2026-04-03T09:24:15.0102800Z 
+2026-04-03T09:24:15.0102800Z 
+2026-04-03T09:24:15.0102800Z 
+2026-04-03T09:24:15.0103130Z zlib-1.3.1           | 77 KB     |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.0103540Z 
+2026-04-03T09:24:15.0103550Z 
+2026-04-03T09:24:15.0103550Z 
+2026-04-03T09:24:15.0103550Z 
+2026-04-03T09:24:15.0103560Z 
+2026-04-03T09:24:15.0103560Z 
+2026-04-03T09:24:15.0103570Z 
+2026-04-03T09:24:15.0103570Z 
+2026-04-03T09:24:15.0103580Z 
+2026-04-03T09:24:15.0103580Z 
+2026-04-03T09:24:15.0103590Z 
+2026-04-03T09:24:15.0103590Z 
+2026-04-03T09:24:15.0103590Z 
+2026-04-03T09:24:15.0103600Z 
+2026-04-03T09:24:15.0103600Z 
+2026-04-03T09:24:15.0103610Z 
+2026-04-03T09:24:15.0103610Z 
+2026-04-03T09:24:15.0103950Z wheel-0.46.3         | 54 KB     |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.0104170Z 
+2026-04-03T09:24:15.0104180Z 
+2026-04-03T09:24:15.0104180Z 
+2026-04-03T09:24:15.0104190Z 
+2026-04-03T09:24:15.0104190Z 
+2026-04-03T09:24:15.0104190Z 
+2026-04-03T09:24:15.0104200Z 
+2026-04-03T09:24:15.0104200Z 
+2026-04-03T09:24:15.0104210Z 
+2026-04-03T09:24:15.0104210Z 
+2026-04-03T09:24:15.0104210Z 
+2026-04-03T09:24:15.0104220Z 
+2026-04-03T09:24:15.0104220Z 
+2026-04-03T09:24:15.0104230Z 
+2026-04-03T09:24:15.0104230Z 
+2026-04-03T09:24:15.0104240Z 
+2026-04-03T09:24:15.0104240Z 
+2026-04-03T09:24:15.0104250Z 
+2026-04-03T09:24:15.0520600Z libzlib-1.3.1        | 47 KB     |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.0522090Z 
+2026-04-03T09:24:15.0522200Z 
+2026-04-03T09:24:15.0522260Z 
+2026-04-03T09:24:15.0787620Z setuptools-82.0.1    | 1.2 MB    | ########## | 100% [A[A[A
+2026-04-03T09:24:15.0787880Z 
+2026-04-03T09:24:15.0787890Z 
+2026-04-03T09:24:15.0787890Z 
+2026-04-03T09:24:15.0790450Z 
+2026-04-03T09:24:15.0997010Z sqlite-3.51.2        | 1.1 MB    | ########## | 100% [A[A[A[A
+2026-04-03T09:24:15.1007820Z python-3.10.20       | 12.3 MB   | ##1        |  22% 
+2026-04-03T09:24:15.1009660Z 
+2026-04-03T09:24:15.1010130Z 
+2026-04-03T09:24:15.1010680Z tk-8.6.15            | 3.3 MB    | ########6  |  86% [A[A
+2026-04-03T09:24:15.1012140Z 
+2026-04-03T09:24:15.1086270Z openssl-3.5.5        | 4.7 MB    | #######4   |  74% [A
+2026-04-03T09:24:15.1088400Z 
+2026-04-03T09:24:15.1088830Z 
+2026-04-03T09:24:15.1089650Z 
+2026-04-03T09:24:15.1090010Z 
+2026-04-03T09:24:15.1090130Z 
+2026-04-03T09:24:15.1090260Z 
+2026-04-03T09:24:15.1093700Z ncurses-6.5          | 886 KB    | 1          |   2% [A[A[A[A[A[A
+2026-04-03T09:24:15.1094060Z 
+2026-04-03T09:24:15.1094150Z 
+2026-04-03T09:24:15.1094240Z 
+2026-04-03T09:24:15.1094330Z 
+2026-04-03T09:24:15.1094440Z 
+2026-04-03T09:24:15.1094800Z pip-26.0.1           | 1.1 MB    | ########## | 100% [A[A[A[A[A
+2026-04-03T09:24:15.1095080Z 
+2026-04-03T09:24:15.1095170Z 
+2026-04-03T09:24:15.1095260Z 
+2026-04-03T09:24:15.1102420Z 
+2026-04-03T09:24:15.1103540Z 
+2026-04-03T09:24:15.1311610Z pip-26.0.1           | 1.1 MB    | ########## | 100% [A[A[A[A[A
+2026-04-03T09:24:15.1311940Z 
+2026-04-03T09:24:15.1311950Z 
+2026-04-03T09:24:15.1311950Z 
+2026-04-03T09:24:15.1311960Z 
+2026-04-03T09:24:15.1311970Z 
+2026-04-03T09:24:15.1312020Z 
+2026-04-03T09:24:15.1375060Z ncurses-6.5          | 886 KB    | ########## | 100% [A[A[A[A[A[A
+2026-04-03T09:24:15.1376590Z 
+2026-04-03T09:24:15.1376630Z 
+2026-04-03T09:24:15.1586600Z tk-8.6.15            | 3.3 MB    | ########## | 100% [A[A
+2026-04-03T09:24:15.1588480Z 
+2026-04-03T09:24:15.1589730Z 
+2026-04-03T09:24:15.1589840Z 
+2026-04-03T09:24:15.1589930Z 
+2026-04-03T09:24:15.1591730Z sqlite-3.51.2        | 1.1 MB    | ########## | 100% [A[A[A[A
+2026-04-03T09:24:15.1591940Z 
+2026-04-03T09:24:15.1591940Z 
+2026-04-03T09:24:15.1591950Z 
+2026-04-03T09:24:15.1591950Z 
+2026-04-03T09:24:15.1605440Z sqlite-3.51.2        | 1.1 MB    | ########## | 100% [A[A[A[A
+2026-04-03T09:24:15.1605650Z 
+2026-04-03T09:24:15.1606150Z 
+2026-04-03T09:24:15.1606160Z 
+2026-04-03T09:24:15.1606160Z 
+2026-04-03T09:24:15.1606180Z 
+2026-04-03T09:24:15.1606180Z 
+2026-04-03T09:24:15.1606190Z 
+2026-04-03T09:24:15.1606980Z 
+2026-04-03T09:24:15.1617760Z libcxx-21.1.8        | 308 KB    | 5          |   5% [A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.1622100Z 
+2026-04-03T09:24:15.1622260Z 
+2026-04-03T09:24:15.1631260Z 
+2026-04-03T09:24:15.1631750Z 
+2026-04-03T09:24:15.1631760Z 
+2026-04-03T09:24:15.1631760Z 
+2026-04-03T09:24:15.1631770Z 
+2026-04-03T09:24:15.1658090Z readline-8.3         | 464 KB    | 3          |   3% [A[A[A[A[A[A[A
+2026-04-03T09:24:15.1665950Z 
+2026-04-03T09:24:15.1720640Z openssl-3.5.5        | 4.7 MB    | ########## | 100% [A
+2026-04-03T09:24:15.1725710Z 
+2026-04-03T09:24:15.1727610Z 
+2026-04-03T09:24:15.1727680Z 
+2026-04-03T09:24:15.1727730Z 
+2026-04-03T09:24:15.1727850Z 
+2026-04-03T09:24:15.1747790Z 
+2026-04-03T09:24:15.1748180Z 
+2026-04-03T09:24:15.1748230Z 
+2026-04-03T09:24:15.1748280Z 
+2026-04-03T09:24:15.1748980Z xz-5.8.2             | 263 KB    | 6          |   6% [A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.1749570Z 
+2026-04-03T09:24:15.1749690Z 
+2026-04-03T09:24:15.1749740Z 
+2026-04-03T09:24:15.1749780Z 
+2026-04-03T09:24:15.1749830Z 
+2026-04-03T09:24:15.1749880Z 
+2026-04-03T09:24:15.1749920Z 
+2026-04-03T09:24:15.1749980Z 
+2026-04-03T09:24:15.1778460Z libcxx-21.1.8        | 308 KB    | ########## | 100% [A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.1778810Z 
+2026-04-03T09:24:15.1778820Z 
+2026-04-03T09:24:15.1778820Z 
+2026-04-03T09:24:15.1778830Z 
+2026-04-03T09:24:15.1778840Z 
+2026-04-03T09:24:15.1778840Z 
+2026-04-03T09:24:15.1778840Z 
+2026-04-03T09:24:15.1778850Z 
+2026-04-03T09:24:15.1778850Z 
+2026-04-03T09:24:15.1833720Z xz-5.8.2             | 263 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.1834020Z 
+2026-04-03T09:24:15.1834030Z 
+2026-04-03T09:24:15.1834030Z 
+2026-04-03T09:24:15.1834040Z 
+2026-04-03T09:24:15.1834040Z 
+2026-04-03T09:24:15.1834040Z 
+2026-04-03T09:24:15.1834050Z 
+2026-04-03T09:24:15.1967230Z readline-8.3         | 464 KB    | ########## | 100% [A[A[A[A[A[A[A
+2026-04-03T09:24:15.1967500Z 
+2026-04-03T09:24:15.1967500Z 
+2026-04-03T09:24:15.1967510Z 
+2026-04-03T09:24:15.1967510Z 
+2026-04-03T09:24:15.1967520Z 
+2026-04-03T09:24:15.1967520Z 
+2026-04-03T09:24:15.1967530Z 
+2026-04-03T09:24:15.1967560Z 
+2026-04-03T09:24:15.1967570Z 
+2026-04-03T09:24:15.1967690Z 
+2026-04-03T09:24:15.1990740Z packaging-26.0       | 166 KB    | 9          |  10% [A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2007270Z python-3.10.20       | 12.3 MB   | ########3  |  83% 
+2026-04-03T09:24:15.2007490Z 
+2026-04-03T09:24:15.2007490Z 
+2026-04-03T09:24:15.2007500Z 
+2026-04-03T09:24:15.2007500Z 
+2026-04-03T09:24:15.2007510Z 
+2026-04-03T09:24:15.2007510Z 
+2026-04-03T09:24:15.2007520Z 
+2026-04-03T09:24:15.2007520Z 
+2026-04-03T09:24:15.2007520Z 
+2026-04-03T09:24:15.2007540Z 
+2026-04-03T09:24:15.2161770Z packaging-26.0       | 166 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2162090Z 
+2026-04-03T09:24:15.2162350Z 
+2026-04-03T09:24:15.2162510Z 
+2026-04-03T09:24:15.2162840Z 
+2026-04-03T09:24:15.2162840Z 
+2026-04-03T09:24:15.2162850Z 
+2026-04-03T09:24:15.2162850Z 
+2026-04-03T09:24:15.2162860Z 
+2026-04-03T09:24:15.2162860Z 
+2026-04-03T09:24:15.2162870Z 
+2026-04-03T09:24:15.2162870Z 
+2026-04-03T09:24:15.2163190Z 
+2026-04-03T09:24:15.2164530Z ca-certificates-2026 | 126 KB    | #2         |  13% [A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2164850Z 
+2026-04-03T09:24:15.2164980Z 
+2026-04-03T09:24:15.2165010Z 
+2026-04-03T09:24:15.2165010Z 
+2026-04-03T09:24:15.2165020Z 
+2026-04-03T09:24:15.2165030Z 
+2026-04-03T09:24:15.2165030Z 
+2026-04-03T09:24:15.2165050Z 
+2026-04-03T09:24:15.2165100Z 
+2026-04-03T09:24:15.2165110Z 
+2026-04-03T09:24:15.2165120Z 
+2026-04-03T09:24:15.2165120Z 
+2026-04-03T09:24:15.2165150Z 
+2026-04-03T09:24:15.2169930Z libffi-3.4.4         | 120 KB    | #3         |  13% [A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2170170Z 
+2026-04-03T09:24:15.2170500Z 
+2026-04-03T09:24:15.2170530Z 
+2026-04-03T09:24:15.2170530Z 
+2026-04-03T09:24:15.2170530Z 
+2026-04-03T09:24:15.2170540Z 
+2026-04-03T09:24:15.2170540Z 
+2026-04-03T09:24:15.2170550Z 
+2026-04-03T09:24:15.2170550Z 
+2026-04-03T09:24:15.2170550Z 
+2026-04-03T09:24:15.2171880Z 
+2026-04-03T09:24:15.2197800Z bzip2-1.0.8          | 129 KB    | #2         |  12% [A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2198790Z 
+2026-04-03T09:24:15.2198830Z 
+2026-04-03T09:24:15.2198840Z 
+2026-04-03T09:24:15.2198840Z 
+2026-04-03T09:24:15.2198850Z 
+2026-04-03T09:24:15.2198850Z 
+2026-04-03T09:24:15.2198860Z 
+2026-04-03T09:24:15.2198860Z 
+2026-04-03T09:24:15.2198860Z 
+2026-04-03T09:24:15.2198870Z 
+2026-04-03T09:24:15.2198870Z 
+2026-04-03T09:24:15.2198880Z 
+2026-04-03T09:24:15.2198940Z 
+2026-04-03T09:24:15.2203520Z libffi-3.4.4         | 120 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2203810Z 
+2026-04-03T09:24:15.2203830Z 
+2026-04-03T09:24:15.2203830Z 
+2026-04-03T09:24:15.2203840Z 
+2026-04-03T09:24:15.2203850Z 
+2026-04-03T09:24:15.2203860Z 
+2026-04-03T09:24:15.2203860Z 
+2026-04-03T09:24:15.2203870Z 
+2026-04-03T09:24:15.2203870Z 
+2026-04-03T09:24:15.2203880Z 
+2026-04-03T09:24:15.2203880Z 
+2026-04-03T09:24:15.2203900Z 
+2026-04-03T09:24:15.2234350Z ca-certificates-2026 | 126 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2235960Z 
+2026-04-03T09:24:15.2236030Z 
+2026-04-03T09:24:15.2236080Z 
+2026-04-03T09:24:15.2236130Z 
+2026-04-03T09:24:15.2236180Z 
+2026-04-03T09:24:15.2236280Z 
+2026-04-03T09:24:15.2236290Z 
+2026-04-03T09:24:15.2236300Z 
+2026-04-03T09:24:15.2236300Z 
+2026-04-03T09:24:15.2236310Z 
+2026-04-03T09:24:15.2236320Z 
+2026-04-03T09:24:15.2436740Z bzip2-1.0.8          | 129 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2439240Z 
+2026-04-03T09:24:15.2439450Z 
+2026-04-03T09:24:15.2439790Z 
+2026-04-03T09:24:15.2439860Z 
+2026-04-03T09:24:15.2441020Z 
+2026-04-03T09:24:15.2441300Z 
+2026-04-03T09:24:15.2441550Z 
+2026-04-03T09:24:15.2442240Z 
+2026-04-03T09:24:15.2443230Z 
+2026-04-03T09:24:15.2443410Z 
+2026-04-03T09:24:15.2444830Z 
+2026-04-03T09:24:15.2445600Z 
+2026-04-03T09:24:15.2445670Z 
+2026-04-03T09:24:15.2445750Z 
+2026-04-03T09:24:15.2468220Z tzdata-2026a         | 117 KB    | #3         |  14% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2468790Z 
+2026-04-03T09:24:15.2469570Z 
+2026-04-03T09:24:15.2470130Z 
+2026-04-03T09:24:15.2470180Z 
+2026-04-03T09:24:15.2470240Z 
+2026-04-03T09:24:15.2470290Z 
+2026-04-03T09:24:15.2470850Z 
+2026-04-03T09:24:15.2471010Z 
+2026-04-03T09:24:15.2471080Z 
+2026-04-03T09:24:15.2471130Z 
+2026-04-03T09:24:15.2471170Z 
+2026-04-03T09:24:15.2471220Z 
+2026-04-03T09:24:15.2471270Z 
+2026-04-03T09:24:15.2471340Z 
+2026-04-03T09:24:15.2510820Z tzdata-2026a         | 117 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2511120Z 
+2026-04-03T09:24:15.2511300Z 
+2026-04-03T09:24:15.2511310Z 
+2026-04-03T09:24:15.2511320Z 
+2026-04-03T09:24:15.2511320Z 
+2026-04-03T09:24:15.2511340Z 
+2026-04-03T09:24:15.2511340Z 
+2026-04-03T09:24:15.2511340Z 
+2026-04-03T09:24:15.2511350Z 
+2026-04-03T09:24:15.2511350Z 
+2026-04-03T09:24:15.2511360Z 
+2026-04-03T09:24:15.2511360Z 
+2026-04-03T09:24:15.2511360Z 
+2026-04-03T09:24:15.2511370Z 
+2026-04-03T09:24:15.2511370Z 
+2026-04-03T09:24:15.2511930Z 
+2026-04-03T09:24:15.2535190Z zlib-1.3.1           | 77 KB     | ##         |  21% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2535480Z 
+2026-04-03T09:24:15.2535720Z 
+2026-04-03T09:24:15.2535770Z 
+2026-04-03T09:24:15.2535900Z 
+2026-04-03T09:24:15.2536070Z 
+2026-04-03T09:24:15.2536780Z 
+2026-04-03T09:24:15.2537140Z 
+2026-04-03T09:24:15.2537500Z 
+2026-04-03T09:24:15.2537760Z 
+2026-04-03T09:24:15.2537770Z 
+2026-04-03T09:24:15.2537770Z 
+2026-04-03T09:24:15.2537780Z 
+2026-04-03T09:24:15.2538030Z 
+2026-04-03T09:24:15.2538200Z 
+2026-04-03T09:24:15.2538280Z 
+2026-04-03T09:24:15.2543530Z libexpat-2.7.5       | 108 KB    | #4         |  15% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2543790Z 
+2026-04-03T09:24:15.2544830Z 
+2026-04-03T09:24:15.2545390Z 
+2026-04-03T09:24:15.2545410Z 
+2026-04-03T09:24:15.2545420Z 
+2026-04-03T09:24:15.2545430Z 
+2026-04-03T09:24:15.2545440Z 
+2026-04-03T09:24:15.2545460Z 
+2026-04-03T09:24:15.2545460Z 
+2026-04-03T09:24:15.2545470Z 
+2026-04-03T09:24:15.2545500Z 
+2026-04-03T09:24:15.2545710Z 
+2026-04-03T09:24:15.2545720Z 
+2026-04-03T09:24:15.2545720Z 
+2026-04-03T09:24:15.2545730Z 
+2026-04-03T09:24:15.2546250Z 
+2026-04-03T09:24:15.2557840Z zlib-1.3.1           | 77 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2558300Z 
+2026-04-03T09:24:15.2560550Z 
+2026-04-03T09:24:15.2561220Z 
+2026-04-03T09:24:15.2561280Z 
+2026-04-03T09:24:15.2561340Z 
+2026-04-03T09:24:15.2561400Z 
+2026-04-03T09:24:15.2561460Z 
+2026-04-03T09:24:15.2561640Z 
+2026-04-03T09:24:15.2563140Z 
+2026-04-03T09:24:15.2563480Z 
+2026-04-03T09:24:15.2563810Z 
+2026-04-03T09:24:15.2564460Z 
+2026-04-03T09:24:15.2566040Z 
+2026-04-03T09:24:15.2566940Z 
+2026-04-03T09:24:15.2566980Z 
+2026-04-03T09:24:15.2584040Z libexpat-2.7.5       | 108 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2584310Z 
+2026-04-03T09:24:15.2584320Z 
+2026-04-03T09:24:15.2584330Z 
+2026-04-03T09:24:15.2584550Z 
+2026-04-03T09:24:15.2584690Z 
+2026-04-03T09:24:15.2585410Z 
+2026-04-03T09:24:15.2585640Z 
+2026-04-03T09:24:15.2585690Z 
+2026-04-03T09:24:15.2585740Z 
+2026-04-03T09:24:15.2586050Z 
+2026-04-03T09:24:15.2586090Z 
+2026-04-03T09:24:15.2586150Z 
+2026-04-03T09:24:15.2586150Z 
+2026-04-03T09:24:15.2586280Z 
+2026-04-03T09:24:15.2586330Z 
+2026-04-03T09:24:15.2586440Z 
+2026-04-03T09:24:15.2588330Z 
+2026-04-03T09:24:15.2600770Z wheel-0.46.3         | 54 KB     | ##9        |  30% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2601100Z 
+2026-04-03T09:24:15.2601310Z 
+2026-04-03T09:24:15.2601530Z 
+2026-04-03T09:24:15.2601550Z 
+2026-04-03T09:24:15.2601560Z 
+2026-04-03T09:24:15.2601570Z 
+2026-04-03T09:24:15.2601580Z 
+2026-04-03T09:24:15.2601580Z 
+2026-04-03T09:24:15.2601590Z 
+2026-04-03T09:24:15.2601600Z 
+2026-04-03T09:24:15.2601600Z 
+2026-04-03T09:24:15.2601610Z 
+2026-04-03T09:24:15.2601620Z 
+2026-04-03T09:24:15.2601630Z 
+2026-04-03T09:24:15.2601640Z 
+2026-04-03T09:24:15.2601640Z 
+2026-04-03T09:24:15.2601700Z 
+2026-04-03T09:24:15.2789760Z wheel-0.46.3         | 54 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2790090Z 
+2026-04-03T09:24:15.2790100Z 
+2026-04-03T09:24:15.2790100Z 
+2026-04-03T09:24:15.2790100Z 
+2026-04-03T09:24:15.2790120Z 
+2026-04-03T09:24:15.2790120Z 
+2026-04-03T09:24:15.2790120Z 
+2026-04-03T09:24:15.2790130Z 
+2026-04-03T09:24:15.2790130Z 
+2026-04-03T09:24:15.2790140Z 
+2026-04-03T09:24:15.2790140Z 
+2026-04-03T09:24:15.2790140Z 
+2026-04-03T09:24:15.2790150Z 
+2026-04-03T09:24:15.2790150Z 
+2026-04-03T09:24:15.2790150Z 
+2026-04-03T09:24:15.2790160Z 
+2026-04-03T09:24:15.2790160Z 
+2026-04-03T09:24:15.2790850Z 
+2026-04-03T09:24:15.2801740Z libzlib-1.3.1        | 47 KB     | ###4       |  34% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.2802020Z 
+2026-04-03T09:24:15.2802030Z 
+2026-04-03T09:24:15.2802040Z 
+2026-04-03T09:24:15.2802040Z 
+2026-04-03T09:24:15.2802050Z 
+2026-04-03T09:24:15.2802060Z 
+2026-04-03T09:24:15.2802200Z 
+2026-04-03T09:24:15.2802960Z 
+2026-04-03T09:24:15.2803310Z 
+2026-04-03T09:24:15.2803320Z 
+2026-04-03T09:24:15.2803320Z 
+2026-04-03T09:24:15.2803330Z 
+2026-04-03T09:24:15.2803330Z 
+2026-04-03T09:24:15.2803340Z 
+2026-04-03T09:24:15.2803340Z 
+2026-04-03T09:24:15.2803340Z 
+2026-04-03T09:24:15.2803350Z 
+2026-04-03T09:24:15.2803360Z 
+2026-04-03T09:24:15.2980840Z libzlib-1.3.1        | 47 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.4404040Z python-3.10.20       | 12.3 MB   | ########## | 100% 
+2026-04-03T09:24:15.4404310Z 
+2026-04-03T09:24:15.4404440Z 
+2026-04-03T09:24:15.4404490Z 
+2026-04-03T09:24:15.4404600Z 
+2026-04-03T09:24:15.4404640Z 
+2026-04-03T09:24:15.6014030Z pip-26.0.1           | 1.1 MB    | ########## | 100% [A[A[A[A[A
+2026-04-03T09:24:15.6014320Z 
+2026-04-03T09:24:15.6014390Z 
+2026-04-03T09:24:15.6014430Z 
+2026-04-03T09:24:15.6014680Z setuptools-82.0.1    | 1.2 MB    | ########## | 100% [A[A[A
+2026-04-03T09:24:15.6014870Z 
+2026-04-03T09:24:15.6014870Z 
+2026-04-03T09:24:15.6015050Z 
+2026-04-03T09:24:15.7644090Z setuptools-82.0.1    | 1.2 MB    | ########## | 100% [A[A[A
+2026-04-03T09:24:15.7646220Z 
+2026-04-03T09:24:15.7647870Z 
+2026-04-03T09:24:15.7872400Z tk-8.6.15            | 3.3 MB    | ########## | 100% [A[A
+2026-04-03T09:24:15.7883120Z 
+2026-04-03T09:24:15.7883420Z 
+2026-04-03T09:24:15.7883520Z 
+2026-04-03T09:24:15.7883530Z 
+2026-04-03T09:24:15.7883530Z 
+2026-04-03T09:24:15.7883540Z 
+2026-04-03T09:24:15.7883540Z 
+2026-04-03T09:24:15.7883550Z 
+2026-04-03T09:24:15.7883930Z libcxx-21.1.8        | 308 KB    | ########## | 100% [A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.7884150Z 
+2026-04-03T09:24:15.7884150Z 
+2026-04-03T09:24:15.7884160Z 
+2026-04-03T09:24:15.7884160Z 
+2026-04-03T09:24:15.7884170Z 
+2026-04-03T09:24:15.7884170Z 
+2026-04-03T09:24:15.7884180Z 
+2026-04-03T09:24:15.7884180Z 
+2026-04-03T09:24:15.8044630Z libcxx-21.1.8        | 308 KB    | ########## | 100% [A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.8045470Z 
+2026-04-03T09:24:15.8358850Z openssl-3.5.5        | 4.7 MB    | ########## | 100% [A
+2026-04-03T09:24:15.8359450Z 
+2026-04-03T09:24:15.8359460Z 
+2026-04-03T09:24:15.8359460Z 
+2026-04-03T09:24:15.8359470Z 
+2026-04-03T09:24:15.8359470Z 
+2026-04-03T09:24:15.8359480Z 
+2026-04-03T09:24:15.8359480Z 
+2026-04-03T09:24:15.8359490Z 
+2026-04-03T09:24:15.8359500Z 
+2026-04-03T09:24:15.8359870Z xz-5.8.2             | 263 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.8360090Z 
+2026-04-03T09:24:15.8360090Z 
+2026-04-03T09:24:15.8360090Z 
+2026-04-03T09:24:15.8360100Z 
+2026-04-03T09:24:15.8360100Z 
+2026-04-03T09:24:15.8360110Z 
+2026-04-03T09:24:15.8360120Z 
+2026-04-03T09:24:15.8360120Z 
+2026-04-03T09:24:15.8360120Z 
+2026-04-03T09:24:15.8416740Z xz-5.8.2             | 263 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.8417090Z 
+2026-04-03T09:24:15.8417100Z 
+2026-04-03T09:24:15.8417110Z 
+2026-04-03T09:24:15.8417110Z 
+2026-04-03T09:24:15.8417110Z 
+2026-04-03T09:24:15.8417120Z 
+2026-04-03T09:24:15.8417150Z 
+2026-04-03T09:24:15.8417440Z readline-8.3         | 464 KB    | ########## | 100% [A[A[A[A[A[A[A
+2026-04-03T09:24:15.8417650Z 
+2026-04-03T09:24:15.8417660Z 
+2026-04-03T09:24:15.8417670Z 
+2026-04-03T09:24:15.8417670Z 
+2026-04-03T09:24:15.8417670Z 
+2026-04-03T09:24:15.8417680Z 
+2026-04-03T09:24:15.8417680Z 
+2026-04-03T09:24:15.8899000Z readline-8.3         | 464 KB    | ########## | 100% [A[A[A[A[A[A[A
+2026-04-03T09:24:15.8900000Z 
+2026-04-03T09:24:15.8900060Z 
+2026-04-03T09:24:15.8900110Z 
+2026-04-03T09:24:15.8900160Z 
+2026-04-03T09:24:15.8900910Z 
+2026-04-03T09:24:15.8905060Z 
+2026-04-03T09:24:15.8905130Z 
+2026-04-03T09:24:15.8905180Z 
+2026-04-03T09:24:15.8905240Z 
+2026-04-03T09:24:15.8905290Z 
+2026-04-03T09:24:15.8905960Z packaging-26.0       | 166 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.8906210Z 
+2026-04-03T09:24:15.8906420Z 
+2026-04-03T09:24:15.8906630Z 
+2026-04-03T09:24:15.8906810Z 
+2026-04-03T09:24:15.8906840Z 
+2026-04-03T09:24:15.8906850Z 
+2026-04-03T09:24:15.8907280Z 
+2026-04-03T09:24:15.8907650Z 
+2026-04-03T09:24:15.8912730Z 
+2026-04-03T09:24:15.8912910Z 
+2026-04-03T09:24:15.9017920Z packaging-26.0       | 166 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.9018360Z 
+2026-04-03T09:24:15.9018390Z 
+2026-04-03T09:24:15.9018730Z 
+2026-04-03T09:24:15.9019150Z 
+2026-04-03T09:24:15.9019180Z 
+2026-04-03T09:24:15.9019190Z 
+2026-04-03T09:24:15.9019200Z 
+2026-04-03T09:24:15.9019210Z 
+2026-04-03T09:24:15.9019220Z 
+2026-04-03T09:24:15.9019220Z 
+2026-04-03T09:24:15.9019230Z 
+2026-04-03T09:24:15.9019270Z 
+2026-04-03T09:24:15.9019700Z ca-certificates-2026 | 126 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.9019960Z 
+2026-04-03T09:24:15.9019970Z 
+2026-04-03T09:24:15.9019970Z 
+2026-04-03T09:24:15.9019980Z 
+2026-04-03T09:24:15.9019980Z 
+2026-04-03T09:24:15.9019990Z 
+2026-04-03T09:24:15.9019990Z 
+2026-04-03T09:24:15.9020000Z 
+2026-04-03T09:24:15.9020000Z 
+2026-04-03T09:24:15.9020000Z 
+2026-04-03T09:24:15.9020040Z 
+2026-04-03T09:24:15.9020040Z 
+2026-04-03T09:24:15.9326640Z ca-certificates-2026 | 126 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.9327930Z 
+2026-04-03T09:24:15.9328790Z 
+2026-04-03T09:24:15.9328870Z 
+2026-04-03T09:24:15.9328920Z 
+2026-04-03T09:24:15.9329580Z 
+2026-04-03T09:24:15.9329630Z 
+2026-04-03T09:24:15.9329800Z 
+2026-04-03T09:24:15.9329850Z 
+2026-04-03T09:24:15.9330320Z 
+2026-04-03T09:24:15.9330570Z 
+2026-04-03T09:24:15.9331170Z 
+2026-04-03T09:24:15.9331780Z bzip2-1.0.8          | 129 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.9332110Z 
+2026-04-03T09:24:15.9334130Z 
+2026-04-03T09:24:15.9334250Z 
+2026-04-03T09:24:15.9334590Z 
+2026-04-03T09:24:15.9334670Z 
+2026-04-03T09:24:15.9334890Z 
+2026-04-03T09:24:15.9335020Z 
+2026-04-03T09:24:15.9335100Z 
+2026-04-03T09:24:15.9335240Z 
+2026-04-03T09:24:15.9335490Z 
+2026-04-03T09:24:15.9335800Z 
+2026-04-03T09:24:15.9843990Z bzip2-1.0.8          | 129 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.9846870Z 
+2026-04-03T09:24:15.9847650Z 
+2026-04-03T09:24:15.9848310Z 
+2026-04-03T09:24:15.9848770Z 
+2026-04-03T09:24:15.9862440Z 
+2026-04-03T09:24:15.9863310Z 
+2026-04-03T09:24:15.9864580Z 
+2026-04-03T09:24:15.9864640Z 
+2026-04-03T09:24:15.9864690Z 
+2026-04-03T09:24:15.9864780Z 
+2026-04-03T09:24:15.9864830Z 
+2026-04-03T09:24:15.9864870Z 
+2026-04-03T09:24:15.9864980Z 
+2026-04-03T09:24:15.9865770Z libffi-3.4.4         | 120 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:15.9866380Z 
+2026-04-03T09:24:15.9866440Z 
+2026-04-03T09:24:15.9866490Z 
+2026-04-03T09:24:15.9866540Z 
+2026-04-03T09:24:15.9866590Z 
+2026-04-03T09:24:15.9866630Z 
+2026-04-03T09:24:15.9866680Z 
+2026-04-03T09:24:15.9866730Z 
+2026-04-03T09:24:15.9866780Z 
+2026-04-03T09:24:15.9866830Z 
+2026-04-03T09:24:15.9866890Z 
+2026-04-03T09:24:15.9866940Z 
+2026-04-03T09:24:15.9866990Z 
+2026-04-03T09:24:16.0075040Z libffi-3.4.4         | 120 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.0075430Z 
+2026-04-03T09:24:16.0075650Z 
+2026-04-03T09:24:16.0075670Z 
+2026-04-03T09:24:16.0075670Z 
+2026-04-03T09:24:16.0075680Z 
+2026-04-03T09:24:16.0075680Z 
+2026-04-03T09:24:16.0075680Z 
+2026-04-03T09:24:16.0075690Z 
+2026-04-03T09:24:16.0075690Z 
+2026-04-03T09:24:16.0075700Z 
+2026-04-03T09:24:16.0075700Z 
+2026-04-03T09:24:16.0075700Z 
+2026-04-03T09:24:16.0075710Z 
+2026-04-03T09:24:16.0075710Z 
+2026-04-03T09:24:16.0075720Z 
+2026-04-03T09:24:16.0075750Z 
+2026-04-03T09:24:16.0076290Z zlib-1.3.1           | 77 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.0076550Z 
+2026-04-03T09:24:16.0076920Z 
+2026-04-03T09:24:16.0077320Z 
+2026-04-03T09:24:16.0077330Z 
+2026-04-03T09:24:16.0077340Z 
+2026-04-03T09:24:16.0077350Z 
+2026-04-03T09:24:16.0077360Z 
+2026-04-03T09:24:16.0077360Z 
+2026-04-03T09:24:16.0077360Z 
+2026-04-03T09:24:16.0077370Z 
+2026-04-03T09:24:16.0077370Z 
+2026-04-03T09:24:16.0077380Z 
+2026-04-03T09:24:16.0077380Z 
+2026-04-03T09:24:16.0077540Z 
+2026-04-03T09:24:16.0077550Z 
+2026-04-03T09:24:16.0077550Z 
+2026-04-03T09:24:16.0259950Z zlib-1.3.1           | 77 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.0261280Z 
+2026-04-03T09:24:16.0261570Z 
+2026-04-03T09:24:16.0262020Z 
+2026-04-03T09:24:16.0262280Z 
+2026-04-03T09:24:16.0262460Z 
+2026-04-03T09:24:16.0262510Z 
+2026-04-03T09:24:16.0262560Z 
+2026-04-03T09:24:16.0262610Z 
+2026-04-03T09:24:16.0262650Z 
+2026-04-03T09:24:16.0262700Z 
+2026-04-03T09:24:16.0262750Z 
+2026-04-03T09:24:16.0262950Z 
+2026-04-03T09:24:16.0263100Z 
+2026-04-03T09:24:16.0263270Z 
+2026-04-03T09:24:16.0263530Z 
+2026-04-03T09:24:16.0267620Z libexpat-2.7.5       | 108 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.0269550Z 
+2026-04-03T09:24:16.0270400Z 
+2026-04-03T09:24:16.0271060Z 
+2026-04-03T09:24:16.0271240Z 
+2026-04-03T09:24:16.0271440Z 
+2026-04-03T09:24:16.0271730Z 
+2026-04-03T09:24:16.0271970Z 
+2026-04-03T09:24:16.0272050Z 
+2026-04-03T09:24:16.0272950Z 
+2026-04-03T09:24:16.0273400Z 
+2026-04-03T09:24:16.0273460Z 
+2026-04-03T09:24:16.0273650Z 
+2026-04-03T09:24:16.0275300Z 
+2026-04-03T09:24:16.0275540Z 
+2026-04-03T09:24:16.0276910Z 
+2026-04-03T09:24:16.0499740Z libexpat-2.7.5       | 108 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.0500060Z 
+2026-04-03T09:24:16.0500300Z 
+2026-04-03T09:24:16.0500320Z 
+2026-04-03T09:24:16.0500340Z 
+2026-04-03T09:24:16.0500350Z 
+2026-04-03T09:24:16.0500350Z 
+2026-04-03T09:24:16.0500360Z 
+2026-04-03T09:24:16.0500360Z 
+2026-04-03T09:24:16.0500360Z 
+2026-04-03T09:24:16.0500370Z 
+2026-04-03T09:24:16.0500370Z 
+2026-04-03T09:24:16.0500380Z 
+2026-04-03T09:24:16.0500380Z 
+2026-04-03T09:24:16.0500380Z 
+2026-04-03T09:24:16.0500390Z 
+2026-04-03T09:24:16.0500390Z 
+2026-04-03T09:24:16.0500400Z 
+2026-04-03T09:24:16.0500780Z wheel-0.46.3         | 54 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.0501110Z 
+2026-04-03T09:24:16.0501110Z 
+2026-04-03T09:24:16.0502300Z 
+2026-04-03T09:24:16.0502640Z 
+2026-04-03T09:24:16.0502720Z 
+2026-04-03T09:24:16.0502780Z 
+2026-04-03T09:24:16.0502830Z 
+2026-04-03T09:24:16.0503090Z 
+2026-04-03T09:24:16.0503160Z 
+2026-04-03T09:24:16.0503220Z 
+2026-04-03T09:24:16.0503270Z 
+2026-04-03T09:24:16.0503330Z 
+2026-04-03T09:24:16.0503390Z 
+2026-04-03T09:24:16.0504390Z 
+2026-04-03T09:24:16.0504790Z 
+2026-04-03T09:24:16.0504860Z 
+2026-04-03T09:24:16.0505450Z 
+2026-04-03T09:24:16.0602090Z wheel-0.46.3         | 54 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.0602380Z 
+2026-04-03T09:24:16.0602390Z 
+2026-04-03T09:24:16.0602400Z 
+2026-04-03T09:24:16.0602420Z 
+2026-04-03T09:24:16.0602420Z 
+2026-04-03T09:24:16.0602430Z 
+2026-04-03T09:24:16.0602440Z 
+2026-04-03T09:24:16.0602450Z 
+2026-04-03T09:24:16.0602450Z 
+2026-04-03T09:24:16.0602460Z 
+2026-04-03T09:24:16.0602470Z 
+2026-04-03T09:24:16.0602480Z 
+2026-04-03T09:24:16.0602490Z 
+2026-04-03T09:24:16.0602510Z 
+2026-04-03T09:24:16.0602520Z 
+2026-04-03T09:24:16.0602530Z 
+2026-04-03T09:24:16.0602540Z 
+2026-04-03T09:24:16.0602560Z 
+2026-04-03T09:24:16.0604620Z libzlib-1.3.1        | 47 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.0604910Z 
+2026-04-03T09:24:16.0605140Z 
+2026-04-03T09:24:16.0605190Z 
+2026-04-03T09:24:16.0605230Z 
+2026-04-03T09:24:16.0605240Z 
+2026-04-03T09:24:16.0605250Z 
+2026-04-03T09:24:16.0605260Z 
+2026-04-03T09:24:16.0605270Z 
+2026-04-03T09:24:16.0605270Z 
+2026-04-03T09:24:16.0605280Z 
+2026-04-03T09:24:16.0605290Z 
+2026-04-03T09:24:16.0605300Z 
+2026-04-03T09:24:16.0605310Z 
+2026-04-03T09:24:16.0605310Z 
+2026-04-03T09:24:16.0605320Z 
+2026-04-03T09:24:16.0605330Z 
+2026-04-03T09:24:16.0605340Z 
+2026-04-03T09:24:16.0605360Z 
+2026-04-03T09:24:16.2180040Z libzlib-1.3.1        | 47 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.2180960Z 
+2026-04-03T09:24:16.2181020Z 
+2026-04-03T09:24:16.2185060Z 
+2026-04-03T09:24:16.2185180Z 
+2026-04-03T09:24:16.2185380Z 
+2026-04-03T09:24:16.2185620Z 
+2026-04-03T09:24:16.2186790Z 
+2026-04-03T09:24:16.2186860Z 
+2026-04-03T09:24:16.2186910Z 
+2026-04-03T09:24:16.2186960Z 
+2026-04-03T09:24:16.2187010Z 
+2026-04-03T09:24:16.2187050Z 
+2026-04-03T09:24:16.2187100Z 
+2026-04-03T09:24:16.2187330Z 
+2026-04-03T09:24:16.2187970Z tzdata-2026a         | 117 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.2188490Z 
+2026-04-03T09:24:16.2188970Z 
+2026-04-03T09:24:16.2190440Z 
+2026-04-03T09:24:16.2190620Z 
+2026-04-03T09:24:16.2190960Z 
+2026-04-03T09:24:16.2191150Z 
+2026-04-03T09:24:16.2191210Z 
+2026-04-03T09:24:16.2191250Z 
+2026-04-03T09:24:16.2191320Z 
+2026-04-03T09:24:16.2191360Z 
+2026-04-03T09:24:16.2191530Z 
+2026-04-03T09:24:16.2191790Z 
+2026-04-03T09:24:16.2193610Z 
+2026-04-03T09:24:16.2193670Z 
+2026-04-03T09:24:16.2702630Z tzdata-2026a         | 117 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.2703300Z 
+2026-04-03T09:24:16.2703460Z 
+2026-04-03T09:24:16.2703480Z 
+2026-04-03T09:24:16.2703490Z 
+2026-04-03T09:24:16.2703500Z 
+2026-04-03T09:24:16.2703520Z 
+2026-04-03T09:24:16.2703870Z ncurses-6.5          | 886 KB    | ########## | 100% [A[A[A[A[A[A
+2026-04-03T09:24:16.2704150Z 
+2026-04-03T09:24:16.2704570Z 
+2026-04-03T09:24:16.2704680Z 
+2026-04-03T09:24:16.2704690Z 
+2026-04-03T09:24:16.2704710Z 
+2026-04-03T09:24:16.6527410Z 
+2026-04-03T09:24:16.6528030Z ncurses-6.5          | 886 KB    | ########## | 100% [A[A[A[A[A[A
+2026-04-03T09:24:16.6528810Z python-3.10.20       | 12.3 MB   | ########## | 100% 
+2026-04-03T09:24:16.6529250Z                                                      
+2026-04-03T09:24:16.6529500Z 
+2026-04-03T09:24:16.6529770Z                                                      [A
+2026-04-03T09:24:16.6530000Z 
+2026-04-03T09:24:16.6530090Z 
+2026-04-03T09:24:16.6530330Z                                                      [A[A
+2026-04-03T09:24:16.6530500Z 
+2026-04-03T09:24:16.6530720Z 
+2026-04-03T09:24:16.6530840Z 
+2026-04-03T09:24:16.6531110Z                                                      [A[A[A
+2026-04-03T09:24:16.6531280Z 
+2026-04-03T09:24:16.6531290Z 
+2026-04-03T09:24:16.6531290Z 
+2026-04-03T09:24:16.6531300Z 
+2026-04-03T09:24:16.6531470Z                                                      [A[A[A[A
+2026-04-03T09:24:16.6531640Z 
+2026-04-03T09:24:16.6531640Z 
+2026-04-03T09:24:16.6531640Z 
+2026-04-03T09:24:16.6531650Z 
+2026-04-03T09:24:16.6531650Z 
+2026-04-03T09:24:16.6531860Z                                                      [A[A[A[A[A
+2026-04-03T09:24:16.6532020Z 
+2026-04-03T09:24:16.6532020Z 
+2026-04-03T09:24:16.6532030Z 
+2026-04-03T09:24:16.6532030Z 
+2026-04-03T09:24:16.6532030Z 
+2026-04-03T09:24:16.6532040Z 
+2026-04-03T09:24:16.6532210Z                                                      [A[A[A[A[A[A
+2026-04-03T09:24:16.6532370Z 
+2026-04-03T09:24:16.6532370Z 
+2026-04-03T09:24:16.6532380Z 
+2026-04-03T09:24:16.6532380Z 
+2026-04-03T09:24:16.6532390Z 
+2026-04-03T09:24:16.6532400Z 
+2026-04-03T09:24:16.6532400Z 
+2026-04-03T09:24:16.6532590Z                                                      [A[A[A[A[A[A[A
+2026-04-03T09:24:16.6532750Z 
+2026-04-03T09:24:16.6532750Z 
+2026-04-03T09:24:16.6532760Z 
+2026-04-03T09:24:16.6532760Z 
+2026-04-03T09:24:16.6532760Z 
+2026-04-03T09:24:16.6532770Z 
+2026-04-03T09:24:16.6532770Z 
+2026-04-03T09:24:16.6532780Z 
+2026-04-03T09:24:16.6532960Z                                                      [A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.6533280Z 
+2026-04-03T09:24:16.6533290Z 
+2026-04-03T09:24:16.6533300Z 
+2026-04-03T09:24:16.6533300Z 
+2026-04-03T09:24:16.6533370Z 
+2026-04-03T09:24:16.6533370Z 
+2026-04-03T09:24:16.6533390Z 
+2026-04-03T09:24:16.6533390Z 
+2026-04-03T09:24:16.6533390Z 
+2026-04-03T09:24:16.6533650Z                                                      [A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.6533840Z 
+2026-04-03T09:24:16.6533850Z 
+2026-04-03T09:24:16.6533850Z 
+2026-04-03T09:24:16.6533850Z 
+2026-04-03T09:24:16.6534160Z 
+2026-04-03T09:24:16.6534170Z 
+2026-04-03T09:24:16.6534170Z 
+2026-04-03T09:24:16.6534180Z 
+2026-04-03T09:24:16.6534180Z 
+2026-04-03T09:24:16.6534180Z 
+2026-04-03T09:24:16.6534390Z                                                      [A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.6534580Z 
+2026-04-03T09:24:16.6534580Z 
+2026-04-03T09:24:16.6534590Z 
+2026-04-03T09:24:16.6534590Z 
+2026-04-03T09:24:16.6534590Z 
+2026-04-03T09:24:16.6534600Z 
+2026-04-03T09:24:16.6534600Z 
+2026-04-03T09:24:16.6534610Z 
+2026-04-03T09:24:16.6534610Z 
+2026-04-03T09:24:16.6534610Z 
+2026-04-03T09:24:16.6534620Z 
+2026-04-03T09:24:16.6534820Z                                                      [A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.6535000Z 
+2026-04-03T09:24:16.6535000Z 
+2026-04-03T09:24:16.6535010Z 
+2026-04-03T09:24:16.6535010Z 
+2026-04-03T09:24:16.6535010Z 
+2026-04-03T09:24:16.6535020Z 
+2026-04-03T09:24:16.6535020Z 
+2026-04-03T09:24:16.6535030Z 
+2026-04-03T09:24:16.6535030Z 
+2026-04-03T09:24:16.6535040Z 
+2026-04-03T09:24:16.6535150Z 
+2026-04-03T09:24:16.6535160Z 
+2026-04-03T09:24:16.6535370Z                                                      [A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.6535550Z 
+2026-04-03T09:24:16.6535560Z 
+2026-04-03T09:24:16.6535560Z 
+2026-04-03T09:24:16.6535570Z 
+2026-04-03T09:24:16.6535570Z 
+2026-04-03T09:24:16.6535570Z 
+2026-04-03T09:24:16.6535580Z 
+2026-04-03T09:24:16.6535580Z 
+2026-04-03T09:24:16.6535590Z 
+2026-04-03T09:24:16.6535590Z 
+2026-04-03T09:24:16.6535600Z 
+2026-04-03T09:24:16.6535600Z 
+2026-04-03T09:24:16.6535610Z 
+2026-04-03T09:24:16.6535810Z                                                      [A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.6536000Z 
+2026-04-03T09:24:16.6536000Z 
+2026-04-03T09:24:16.6536010Z 
+2026-04-03T09:24:16.6536010Z 
+2026-04-03T09:24:16.6536020Z 
+2026-04-03T09:24:16.6536020Z 
+2026-04-03T09:24:16.6536020Z 
+2026-04-03T09:24:16.6536030Z 
+2026-04-03T09:24:16.6536030Z 
+2026-04-03T09:24:16.6536040Z 
+2026-04-03T09:24:16.6536040Z 
+2026-04-03T09:24:16.6536050Z 
+2026-04-03T09:24:16.6536050Z 
+2026-04-03T09:24:16.6536060Z 
+2026-04-03T09:24:16.6536280Z                                                      [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.6536470Z 
+2026-04-03T09:24:16.6536470Z 
+2026-04-03T09:24:16.6536470Z 
+2026-04-03T09:24:16.6536480Z 
+2026-04-03T09:24:16.6536480Z 
+2026-04-03T09:24:16.6536490Z 
+2026-04-03T09:24:16.6536490Z 
+2026-04-03T09:24:16.6536490Z 
+2026-04-03T09:24:16.6536500Z 
+2026-04-03T09:24:16.6536500Z 
+2026-04-03T09:24:16.6536510Z 
+2026-04-03T09:24:16.6536510Z 
+2026-04-03T09:24:16.6536510Z 
+2026-04-03T09:24:16.6536520Z 
+2026-04-03T09:24:16.6536520Z 
+2026-04-03T09:24:16.6536740Z                                                      [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.6536940Z 
+2026-04-03T09:24:16.6536940Z 
+2026-04-03T09:24:16.6536940Z 
+2026-04-03T09:24:16.6536950Z 
+2026-04-03T09:24:16.6536960Z 
+2026-04-03T09:24:16.6536960Z 
+2026-04-03T09:24:16.6536970Z 
+2026-04-03T09:24:16.6536970Z 
+2026-04-03T09:24:16.6536980Z 
+2026-04-03T09:24:16.6536980Z 
+2026-04-03T09:24:16.6536990Z 
+2026-04-03T09:24:16.6536990Z 
+2026-04-03T09:24:16.6536990Z 
+2026-04-03T09:24:16.6537000Z 
+2026-04-03T09:24:16.6537000Z 
+2026-04-03T09:24:16.6537000Z 
+2026-04-03T09:24:16.6537230Z                                                      [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.6537430Z 
+2026-04-03T09:24:16.6537440Z 
+2026-04-03T09:24:16.6537440Z 
+2026-04-03T09:24:16.6537440Z 
+2026-04-03T09:24:16.6537450Z 
+2026-04-03T09:24:16.6537450Z 
+2026-04-03T09:24:16.6537450Z 
+2026-04-03T09:24:16.6537460Z 
+2026-04-03T09:24:16.6537460Z 
+2026-04-03T09:24:16.6537470Z 
+2026-04-03T09:24:16.6537470Z 
+2026-04-03T09:24:16.6537470Z 
+2026-04-03T09:24:16.6537480Z 
+2026-04-03T09:24:16.6537480Z 
+2026-04-03T09:24:16.6537490Z 
+2026-04-03T09:24:16.6537490Z 
+2026-04-03T09:24:16.6537500Z 
+2026-04-03T09:24:16.6537750Z                                                      [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+2026-04-03T09:24:16.6538040Z 
+2026-04-03T09:24:16.6538050Z 
+2026-04-03T09:24:16.6538050Z 
+2026-04-03T09:24:16.6538060Z 
+2026-04-03T09:24:16.6538060Z 
+2026-04-03T09:24:16.6538060Z 
+2026-04-03T09:24:16.6538070Z 
+2026-04-03T09:24:16.6538070Z 
+2026-04-03T09:24:16.6538080Z 
+2026-04-03T09:24:16.6538080Z 
+2026-04-03T09:24:16.6538080Z 
+2026-04-03T09:24:16.6538090Z 
+2026-04-03T09:24:16.6538090Z 
+2026-04-03T09:24:16.6538090Z 
+2026-04-03T09:24:16.6538100Z 
+2026-04-03T09:24:16.6538100Z 
+2026-04-03T09:24:16.6538110Z 
+2026-04-03T09:24:16.6538110Z 
+2026-04-03T09:24:16.6538390Z                                                      [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A done
+2026-04-03T09:24:16.8717690Z Preparing transaction: - done
+2026-04-03T09:24:18.9980630Z Verifying transaction: | / - \ | / - \ | / - \ | done
+2026-04-03T09:24:21.8403370Z Executing transaction: - \ | / - \ | / - \ | / - \ | / done
+2026-04-03T09:24:21.8657760Z #
+2026-04-03T09:24:21.8658220Z # To activate this environment, use
+2026-04-03T09:24:21.8660510Z #
+2026-04-03T09:24:21.8660730Z #     $ conda activate copaw-build
+2026-04-03T09:24:21.8660940Z #
+2026-04-03T09:24:21.8661200Z # To deactivate an active environment, use
+2026-04-03T09:24:21.8661500Z #
+2026-04-03T09:24:21.8668780Z #     $ conda deactivate
+2026-04-03T09:24:21.8668910Z 
+2026-04-03T09:24:21.9584690Z ##[endgroup]
+2026-04-03T09:24:21.9584980Z ##[endgroup]
+2026-04-03T09:24:21.9585220Z setup-miniconda ran successfully

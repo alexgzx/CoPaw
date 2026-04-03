@@ -1,0 +1,7 @@
+﻿2026-04-03T09:24:21.9766110Z ##[group]Run rm -rf dist && mkdir -p dist
+2026-04-03T09:24:21.9766350Z [36;1mrm -rf dist && mkdir -p dist[0m
+2026-04-03T09:24:21.9851740Z shell: /bin/bash -e {0}
+2026-04-03T09:24:21.9851910Z env:
+2026-04-03T09:24:21.9852030Z   INPUT_RUN_POST: true
+2026-04-03T09:24:21.9852180Z   CONDA: /Users/runner/miniconda3
+2026-04-03T09:24:21.9852340Z ##[endgroup]

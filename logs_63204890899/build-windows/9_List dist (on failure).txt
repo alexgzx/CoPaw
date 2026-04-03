@@ -1,0 +1,13 @@
+﻿2026-04-03T09:25:58.0887614Z ##[group]Run Write-Host "=== dist contents ==="
+2026-04-03T09:25:58.0888020Z [36;1mWrite-Host "=== dist contents ==="[0m
+2026-04-03T09:25:58.0888547Z [36;1mGet-ChildItem -Path dist -Recurse -Depth 2 -ErrorAction SilentlyContinue | ForEach-Object { $_.FullName }[0m
+2026-04-03T09:25:58.0889091Z [36;1mif (Test-Path dist\win-unpacked) {[0m
+2026-04-03T09:25:58.0889412Z [36;1m  Write-Host "=== dist\win-unpacked (first 30) ==="[0m
+2026-04-03T09:25:58.0890016Z [36;1m  Get-ChildItem -Path dist\win-unpacked -ErrorAction SilentlyContinue | Select-Object -First 30 | ForEach-Object { $_.Name }[0m
+2026-04-03T09:25:58.0890585Z [36;1m}[0m
+2026-04-03T09:25:58.0952138Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-04-03T09:25:58.0952687Z env:
+2026-04-03T09:25:58.0952838Z   INPUT_RUN_POST: true
+2026-04-03T09:25:58.0953017Z   CONDA: C:\Miniconda
+2026-04-03T09:25:58.0953181Z ##[endgroup]
+2026-04-03T09:26:01.5330213Z === dist contents ===

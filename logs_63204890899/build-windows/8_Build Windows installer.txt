@@ -1,0 +1,41 @@
+﻿2026-04-03T09:25:44.6593407Z ##[group]Run conda run -n copaw-build pwsh -File ./scripts/pack/build_win.ps1
+2026-04-03T09:25:44.6594225Z [36;1mconda run -n copaw-build pwsh -File ./scripts/pack/build_win.ps1[0m
+2026-04-03T09:25:44.6656598Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-04-03T09:25:44.6656942Z env:
+2026-04-03T09:25:44.6657089Z   INPUT_RUN_POST: true
+2026-04-03T09:25:44.6657271Z   CONDA: C:\Miniconda
+2026-04-03T09:25:44.6657432Z ##[endgroup]
+2026-04-03T09:25:57.9191568Z npm error code EUSAGE
+2026-04-03T09:25:57.9191922Z npm error
+2026-04-03T09:25:57.9192379Z npm error The `npm ci` command can only install with an existing package-lock.json or
+2026-04-03T09:25:57.9193002Z npm error npm-shrinkwrap.json with lockfileVersion >= 1. Run an install with npm@5 or
+2026-04-03T09:25:57.9193569Z npm error later to generate a package-lock.json file, then try again.
+2026-04-03T09:25:57.9194138Z npm error
+2026-04-03T09:25:57.9194406Z npm error Clean install a project
+2026-04-03T09:25:57.9194623Z npm error
+2026-04-03T09:25:57.9194831Z npm error Usage:
+2026-04-03T09:25:57.9194991Z npm error npm ci
+2026-04-03T09:25:57.9195148Z npm error
+2026-04-03T09:25:57.9195296Z npm error Options:
+2026-04-03T09:25:57.9195696Z npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+2026-04-03T09:25:57.9196297Z npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+2026-04-03T09:25:57.9196891Z npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+2026-04-03T09:25:57.9197507Z npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+2026-04-03T09:25:57.9197966Z npm error [--no-bin-links] [--no-fund] [--dry-run]
+2026-04-03T09:25:57.9198418Z npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+2026-04-03T09:25:57.9198941Z npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+2026-04-03T09:25:57.9199335Z npm error
+2026-04-03T09:25:57.9199884Z npm error aliases: clean-install, ic, install-clean, isntall-clean
+2026-04-03T09:25:57.9200279Z npm error
+2026-04-03T09:25:57.9200485Z npm error Run "npm help ci" for more info
+2026-04-03T09:25:57.9201009Z npm error A complete log of this run can be found in: C:\npm\cache\_logs\2026-04-03T09_25_53_263Z-debug-0.log
+2026-04-03T09:25:57.9201953Z [31;1mException: [0mD:\a\CoPaw\CoPaw\scripts\wheel_build.ps1:15[0m
+2026-04-03T09:25:57.9202336Z [31;1m[0m[36;1mLine |[0m
+2026-04-03T09:25:57.9202958Z [31;1m[0m[36;1m[36;1m  15 | [0m … XITCODE -ne 0) { [36;1mthrow "npm ci failed with exit code $LASTEXITCODE"[0m }[0m
+2026-04-03T09:25:57.9203767Z [31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+2026-04-03T09:25:57.9204461Z [31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mnpm ci failed with exit code 1[0m
+2026-04-03T09:25:57.9205199Z ERROR conda.cli.main_run:execute(142): `conda run pwsh -File ./scripts/pack/build_win.ps1` failed. (See above for error)
+2026-04-03T09:25:57.9205789Z [build_win] REPO_ROOT=D:\a\CoPaw\CoPaw
+2026-04-03T09:25:57.9206116Z == Building wheel (includes console frontend) ==
+2026-04-03T09:25:57.9206431Z [wheel_build] Building console frontend...
+2026-04-03T09:25:58.0741607Z ##[error]Process completed with exit code 1.

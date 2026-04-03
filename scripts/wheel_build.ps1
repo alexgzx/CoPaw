@@ -11,8 +11,8 @@ $ConsoleDest = Join-Path $RepoRoot "src\copaw\console"
 Write-Host "[wheel_build] Building console frontend..."
 Push-Location $ConsoleDir
 try {
-  npm ci
-  if ($LASTEXITCODE -ne 0) { throw "npm ci failed with exit code $LASTEXITCODE" }
+  npm install
+  if ($LASTEXITCODE -ne 0) { throw "npm install failed with exit code $LASTEXITCODE" }
   npm run build
   if ($LASTEXITCODE -ne 0) { throw "npm run build failed with exit code $LASTEXITCODE" }
 } finally {

@@ -1,0 +1,36 @@
+﻿2026-04-03T09:24:22.0284080Z ##[group]Run chmod +x scripts/pack/build_macos.sh
+2026-04-03T09:24:22.0284410Z [36;1mchmod +x scripts/pack/build_macos.sh[0m
+2026-04-03T09:24:22.0284800Z [36;1mconda run -n copaw-build bash -c 'CREATE_ZIP=1 ./scripts/pack/build_macos.sh'[0m
+2026-04-03T09:24:22.0331730Z shell: /bin/bash -e {0}
+2026-04-03T09:24:22.0331890Z env:
+2026-04-03T09:24:22.0332000Z   INPUT_RUN_POST: true
+2026-04-03T09:24:22.0332150Z   CONDA: /Users/runner/miniconda3
+2026-04-03T09:24:22.0332310Z ##[endgroup]
+2026-04-03T09:24:23.8160000Z npm error code EUSAGE
+2026-04-03T09:24:23.8169860Z npm error
+2026-04-03T09:24:23.8170310Z == Building wheel (includes console frontend) ==
+2026-04-03T09:24:23.8171110Z npm error The `npm ci` command can only install with an existing package-lock.json or
+2026-04-03T09:24:23.8171580Z [wheel_build] Building console frontend...
+2026-04-03T09:24:23.8172240Z npm error npm-shrinkwrap.json with lockfileVersion >= 1. Run an install with npm@5 or
+2026-04-03T09:24:23.8172930Z npm error later to generate a package-lock.json file, then try again.
+2026-04-03T09:24:23.8173480Z npm error
+2026-04-03T09:24:23.8173920Z npm error Clean install a project
+2026-04-03T09:24:23.8174180Z npm error
+2026-04-03T09:24:23.8174310Z npm error Usage:
+2026-04-03T09:24:23.8174460Z npm error npm ci
+2026-04-03T09:24:23.8174590Z npm error
+2026-04-03T09:24:23.8174760Z npm error Options:
+2026-04-03T09:24:23.8175190Z npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+2026-04-03T09:24:23.8175770Z npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+2026-04-03T09:24:23.8176350Z npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+2026-04-03T09:24:23.8176990Z npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+2026-04-03T09:24:23.8177460Z npm error [--no-bin-links] [--no-fund] [--dry-run]
+2026-04-03T09:24:23.8177970Z npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+2026-04-03T09:24:23.8178540Z npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+2026-04-03T09:24:23.8180980Z npm error
+2026-04-03T09:24:23.8181310Z npm error aliases: clean-install, ic, install-clean, isntall-clean
+2026-04-03T09:24:23.8181580Z npm error
+2026-04-03T09:24:23.8181780Z npm error Run "npm help ci" for more info
+2026-04-03T09:24:23.8182350Z npm error A complete log of this run can be found in: /Users/runner/.npm/_logs/2026-04-03T09_24_23_526Z-debug-0.log
+2026-04-03T09:24:23.8183210Z ERROR conda.cli.main_run:execute(142): `conda run bash -c CREATE_ZIP=1 ./scripts/pack/build_macos.sh` failed. (See above for error)
+2026-04-03T09:24:23.8775770Z ##[error]Process completed with exit code 1.

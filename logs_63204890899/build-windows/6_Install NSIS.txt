@@ -1,0 +1,63 @@
+﻿2026-04-03T09:25:31.1597730Z ##[group]Run negrutiu/nsis-install@v2
+2026-04-03T09:25:31.1598045Z with:
+2026-04-03T09:25:31.1598194Z   distro: negrutiu
+2026-04-03T09:25:31.1598357Z   arch: x86
+2026-04-03T09:25:31.1598501Z   register-path: true
+2026-04-03T09:25:31.1598675Z env:
+2026-04-03T09:25:31.1598817Z   INPUT_RUN_POST: true
+2026-04-03T09:25:31.1598999Z   CONDA: C:\Miniconda
+2026-04-03T09:25:31.1599164Z ##[endgroup]
+2026-04-03T09:25:31.1823668Z ##[group]Run import os, sys
+2026-04-03T09:25:31.1823938Z [36;1mimport os, sys[0m
+2026-04-03T09:25:31.1824170Z [36;1mif os.getenv('GITHUB_ACTION_PATH', ''):[0m
+2026-04-03T09:25:31.1824493Z [36;1m  sys.path.insert(0, os.getenv('GITHUB_ACTION_PATH'))[0m
+2026-04-03T09:25:31.1824805Z [36;1melif os.getenv('GITHUB_WORKSPACE', ''):[0m
+2026-04-03T09:25:31.1825103Z [36;1m  sys.path.insert(0, os.getenv('GITHUB_WORKSPACE'))[0m
+2026-04-03T09:25:31.1825558Z [36;1mfrom action import *[0m
+2026-04-03T09:25:31.1825881Z [36;1m[0m
+2026-04-03T09:25:31.1826050Z [36;1m# list existing NSIS installations[0m
+2026-04-03T09:25:31.1826364Z [36;1mfor makensis, instdir in nsis_list():[0m
+2026-04-03T09:25:31.1826787Z [36;1m  print(f'Found nsis/{nsis_version(instdir)}-{pe_architecture(makensis)} in "{instdir}"')[0m
+2026-04-03T09:25:31.1827193Z [36;1m[0m
+2026-04-03T09:25:31.1828044Z [36;1m# when running in silent mode, NSIS installer doesn't completely uninstall existing installations, instead it only overwrites existing files[0m
+2026-04-03T09:25:31.1828980Z [36;1m# it happens that negrutiu-NSIS has more files than official-NSIS, so installing the official distro over negrutiu leaves some files behind[0m
+2026-04-03T09:25:31.1829857Z [36;1m# to avoid this we first completely uninstall any existing installation[0m
+2026-04-03T09:25:31.1830196Z [36;1minstdir = r''[0m
+2026-04-03T09:25:31.1830376Z [36;1mif not instdir:[0m
+2026-04-03T09:25:31.1830549Z [36;1m  if r'' == 'amd64':[0m
+2026-04-03T09:25:31.1830870Z [36;1m    instdir = os.path.normpath(os.path.expandvars(r'%ProgramFiles%\NSIS'))[0m
+2026-04-03T09:25:31.1831230Z [36;1m  elif r'' == 'x86':[0m
+2026-04-03T09:25:31.1831557Z [36;1m    instdir = os.path.normpath(os.path.expandvars(r'%ProgramFiles(x86)%\NSIS'))[0m
+2026-04-03T09:25:31.1832225Z [36;1mif instdir and os.path.exists(instdir) and os.path.isdir(instdir) and os.path.exists(os.path.join(instdir, 'uninst-nsis.exe')):[0m
+2026-04-03T09:25:31.1832870Z [36;1m  nsis_uninstall(instdir, unregister_path=(r'true'.lower() == 'true'))[0m
+2026-04-03T09:25:31.1833194Z [36;1m[0m
+2026-04-03T09:25:31.1833377Z [36;1m# download and install latest negrutiu/nsis[0m
+2026-04-03T09:25:31.1833665Z [36;1moutdir, outver, outarch = nsis_install([0m
+2026-04-03T09:25:31.1833908Z [36;1m  distro=r'negrutiu',[0m
+2026-04-03T09:25:31.1834101Z [36;1m  arch=r'x86',[0m
+2026-04-03T09:25:31.1834266Z [36;1m  instdir=r'',[0m
+2026-04-03T09:25:31.1834481Z [36;1m  register_path=(r'true'.lower() == 'true'),[0m
+2026-04-03T09:25:31.1835008Z [36;1m  github_token=r'***'[0m
+2026-04-03T09:25:31.1835207Z [36;1m  )[0m
+2026-04-03T09:25:31.1835348Z [36;1m[0m
+2026-04-03T09:25:31.1835504Z [36;1m# list existing NSIS installations[0m
+2026-04-03T09:25:31.1835767Z [36;1mfor makensis, instdir in nsis_list():[0m
+2026-04-03T09:25:31.1836181Z [36;1m  print(f'Found nsis/{nsis_version(instdir)}-{pe_architecture(makensis)} in "{instdir}"')[0m
+2026-04-03T09:25:31.1836573Z [36;1m[0m
+2026-04-03T09:25:31.1836705Z [36;1m# outputs[0m
+2026-04-03T09:25:31.1836927Z [36;1mwith open(os.getenv('GITHUB_OUTPUT'), "a") as fo:[0m
+2026-04-03T09:25:31.1837224Z [36;1m  fo.write(f"instdir={outdir}\n")[0m
+2026-04-03T09:25:31.1837457Z [36;1m  fo.write(f"version={outver}\n")[0m
+2026-04-03T09:25:31.1837692Z [36;1m  fo.write(f"arch={outarch}\n")[0m
+2026-04-03T09:25:31.1853628Z shell: C:\hostedtoolcache\windows\Python\3.12.10\x64\python.EXE {0}
+2026-04-03T09:25:31.1853954Z env:
+2026-04-03T09:25:31.1854095Z   INPUT_RUN_POST: true
+2026-04-03T09:25:31.1854277Z   CONDA: C:\Miniconda
+2026-04-03T09:25:31.1856563Z ##[endgroup]
+2026-04-03T09:25:40.7911337Z Download https://api.github.com/repos/negrutiu/nsis/releases/latest : 200 OK, 1003 ms
+2026-04-03T09:25:40.7912903Z Download https://github.com/negrutiu/nsis/releases/download/v3.11.7461.309/nsis-3.11.7461.309-negrutiu-x86.exe : 200 OK, 192 ms
+2026-04-03T09:25:40.7914508Z Run "D:\a\_actions\negrutiu\nsis-install\v2\runtime\downloads\nsis-3.11.7461.309-negrutiu-x86.exe" /S : OK, 5319 ms
+2026-04-03T09:25:40.7915516Z Added "C:\Program Files (x86)\NSIS" to GITHUB_PATH
+2026-04-03T09:25:40.7916144Z Added "C:\Program Files (x86)\NSIS" to process PATH
+2026-04-03T09:25:40.7916738Z Added "C:\Program Files (x86)\NSIS" to system PATH
+2026-04-03T09:25:40.7917394Z Found nsis/3.11.7461.309-x86 in "C:\Program Files (x86)\NSIS"
