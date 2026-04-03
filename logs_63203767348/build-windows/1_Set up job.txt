@@ -1,0 +1,34 @@
+﻿2026-04-03T09:10:24.5940114Z Current runner version: '2.333.1'
+2026-04-03T09:10:24.6187144Z ##[group]Runner Image Provisioner
+2026-04-03T09:10:24.6187940Z Hosted Compute Agent
+2026-04-03T09:10:24.6188647Z Version: 20260213.493
+2026-04-03T09:10:24.6189284Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-04-03T09:10:24.6190272Z Build Date: 2026-02-13T00:28:41Z
+2026-04-03T09:10:24.6190919Z Worker ID: {fbf60860-e2f8-463a-a6d8-e8b6bf5dbea4}
+2026-04-03T09:10:24.6191564Z Azure Region: westus3
+2026-04-03T09:10:24.6192069Z ##[endgroup]
+2026-04-03T09:10:24.6193485Z ##[group]Operating System
+2026-04-03T09:10:24.6194242Z Microsoft Windows Server 2025
+2026-04-03T09:10:24.6194781Z 10.0.26100
+2026-04-03T09:10:24.6195225Z Datacenter
+2026-04-03T09:10:24.6195699Z ##[endgroup]
+2026-04-03T09:10:24.6196127Z ##[group]Runner Image
+2026-04-03T09:10:24.6196637Z Image: windows-2025
+2026-04-03T09:10:24.6197069Z Version: 20260317.61.1
+2026-04-03T09:10:24.6198040Z Included Software: https://github.com/actions/runner-images/blob/win25/20260317.61/images/windows/Windows2025-Readme.md
+2026-04-03T09:10:24.6199804Z Image Release: https://github.com/actions/runner-images/releases/tag/win25%2F20260317.61
+2026-04-03T09:10:24.6200650Z ##[endgroup]
+2026-04-03T09:10:24.6201543Z ##[group]GITHUB_TOKEN Permissions
+2026-04-03T09:10:24.6203308Z Contents: read
+2026-04-03T09:10:24.6203843Z Metadata: read
+2026-04-03T09:10:24.6204245Z ##[endgroup]
+2026-04-03T09:10:24.6206247Z Secret source: Actions
+2026-04-03T09:10:24.6206953Z Prepare workflow directory
+2026-04-03T09:10:24.7415429Z Prepare all required actions
+2026-04-03T09:10:24.7453034Z Getting action download info
+2026-04-03T09:10:25.2147575Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-04-03T09:10:25.4567835Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-04-03T09:10:25.7220548Z Download action repository 'conda-incubator/setup-miniconda@v3' (SHA:fc2d68f6413eb2d87b895e92f8584b5b94a10167)
+2026-04-03T09:10:26.6293253Z Download action repository 'negrutiu/nsis-install@v2' (SHA:f3339c88dba6fd08910d5275a943f8f746d94876)
+2026-04-03T09:10:27.1707572Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-04-03T09:10:28.0776056Z Complete job name: build-windows

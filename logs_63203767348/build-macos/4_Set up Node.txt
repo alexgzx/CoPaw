@@ -1,0 +1,17 @@
+﻿2026-04-03T09:10:28.0185690Z ##[group]Run actions/setup-node@v4
+2026-04-03T09:10:28.0186390Z with:
+2026-04-03T09:10:28.0186810Z   node-version: 20
+2026-04-03T09:10:28.0187290Z   cache: npm
+2026-04-03T09:10:28.0187740Z   always-auth: false
+2026-04-03T09:10:28.0188280Z   check-latest: false
+2026-04-03T09:10:28.0189060Z   token: ***
+2026-04-03T09:10:28.0189520Z ##[endgroup]
+2026-04-03T09:10:28.1457880Z Found in cache @ /Users/runner/hostedtoolcache/node/20.20.2/arm64
+2026-04-03T09:10:28.1461410Z ##[group]Environment details
+2026-04-03T09:10:28.7867200Z node: v20.20.2
+2026-04-03T09:10:28.7968450Z npm: 10.8.2
+2026-04-03T09:10:28.8069510Z yarn: 1.22.22
+2026-04-03T09:10:28.8145690Z ##[endgroup]
+2026-04-03T09:10:28.8193940Z [command]/Users/runner/hostedtoolcache/node/20.20.2/arm64/bin/npm config get cache
+2026-04-03T09:10:28.9524950Z /Users/runner/.npm
+2026-04-03T09:10:28.9671750Z ##[error]Dependencies lock file is not found in /Users/runner/work/CoPaw/CoPaw. Supported file patterns: package-lock.json,npm-shrinkwrap.json,yarn.lock

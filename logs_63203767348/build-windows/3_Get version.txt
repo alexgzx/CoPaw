@@ -1,0 +1,12 @@
+﻿2026-04-03T09:10:34.4060467Z ##[group]Run $content = Get-Content src/copaw/__version__.py -Raw
+2026-04-03T09:10:34.4061059Z [36;1m$content = Get-Content src/copaw/__version__.py -Raw[0m
+2026-04-03T09:10:34.4061440Z [36;1mif ($content -match '__version__\s*=\s*"([^"]+)"') {[0m
+2026-04-03T09:10:34.4061732Z [36;1m  $v = $Matches[1][0m
+2026-04-03T09:10:34.4061926Z [36;1m} else {[0m
+2026-04-03T09:10:34.4062163Z [36;1m  throw "Failed to extract version from __version__.py"[0m
+2026-04-03T09:10:34.4062449Z [36;1m}[0m
+2026-04-03T09:10:34.4062771Z [36;1m"version<<EOF" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append[0m
+2026-04-03T09:10:34.4063279Z [36;1m$v | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append[0m
+2026-04-03T09:10:34.4064384Z [36;1m"EOF" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append[0m
+2026-04-03T09:10:34.4825505Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-04-03T09:10:34.4825902Z ##[endgroup]

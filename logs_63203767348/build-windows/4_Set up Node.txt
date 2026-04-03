@@ -1,0 +1,17 @@
+﻿2026-04-03T09:10:40.2063439Z ##[group]Run actions/setup-node@v4
+2026-04-03T09:10:40.2063759Z with:
+2026-04-03T09:10:40.2063926Z   node-version: 20
+2026-04-03T09:10:40.2064089Z   cache: npm
+2026-04-03T09:10:40.2064560Z   always-auth: false
+2026-04-03T09:10:40.2064796Z   check-latest: false
+2026-04-03T09:10:40.2065103Z   token: ***
+2026-04-03T09:10:40.2065259Z ##[endgroup]
+2026-04-03T09:10:40.4518174Z Found in cache @ C:\hostedtoolcache\windows\node\20.20.1\x64
+2026-04-03T09:10:40.4528715Z ##[group]Environment details
+2026-04-03T09:10:44.4790679Z node: v20.20.1
+2026-04-03T09:10:44.4791019Z npm: 10.8.2
+2026-04-03T09:10:44.4791245Z yarn: 1.22.22
+2026-04-03T09:10:44.4793319Z ##[endgroup]
+2026-04-03T09:10:44.5579391Z [command]C:\Windows\system32\cmd.exe /D /S /C "C:\hostedtoolcache\windows\node\20.20.1\x64\npm.cmd config get cache"
+2026-04-03T09:10:45.0986976Z C:\npm\cache
+2026-04-03T09:10:45.1223332Z ##[error]Dependencies lock file is not found in D:\a\CoPaw\CoPaw. Supported file patterns: package-lock.json,npm-shrinkwrap.json,yarn.lock

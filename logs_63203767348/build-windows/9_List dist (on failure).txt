@@ -1,0 +1,10 @@
+﻿2026-04-03T09:10:45.1484415Z ##[group]Run Write-Host "=== dist contents ==="
+2026-04-03T09:10:45.1484818Z [36;1mWrite-Host "=== dist contents ==="[0m
+2026-04-03T09:10:45.1485346Z [36;1mGet-ChildItem -Path dist -Recurse -Depth 2 -ErrorAction SilentlyContinue | ForEach-Object { $_.FullName }[0m
+2026-04-03T09:10:45.1485872Z [36;1mif (Test-Path dist\win-unpacked) {[0m
+2026-04-03T09:10:45.1486179Z [36;1m  Write-Host "=== dist\win-unpacked (first 30) ==="[0m
+2026-04-03T09:10:45.1486786Z [36;1m  Get-ChildItem -Path dist\win-unpacked -ErrorAction SilentlyContinue | Select-Object -First 30 | ForEach-Object { $_.Name }[0m
+2026-04-03T09:10:45.1487350Z [36;1m}[0m
+2026-04-03T09:10:45.1555724Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-04-03T09:10:45.1556065Z ##[endgroup]
+2026-04-03T09:10:45.5288523Z === dist contents ===

@@ -1,0 +1,4 @@
+﻿2026-04-03T09:10:27.9576090Z ##[group]Run echo "version=$(sed -n 's/^__version__[[:space:]]*=[[:space:]]*"\([^"]*\)".*/\1/p' src/copaw/__version__.py)" >> $GITHUB_OUTPUT
+2026-04-03T09:10:27.9579030Z [36;1mecho "version=$(sed -n 's/^__version__[[:space:]]*=[[:space:]]*"\([^"]*\)".*/\1/p' src/copaw/__version__.py)" >> $GITHUB_OUTPUT[0m
+2026-04-03T09:10:27.9718330Z shell: /bin/bash -e {0}
+2026-04-03T09:10:27.9719910Z ##[endgroup]

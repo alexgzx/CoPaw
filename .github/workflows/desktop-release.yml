@@ -36,7 +36,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
 
       - name: Set up Miniconda
         uses: conda-incubator/setup-miniconda@v3
@@ -93,7 +92,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
 
       - name: Set up Miniconda
         uses: conda-incubator/setup-miniconda@v3
